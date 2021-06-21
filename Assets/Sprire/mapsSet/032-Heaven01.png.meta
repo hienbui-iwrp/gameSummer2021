@@ -1,0 +1,864 @@
+fileFormatVersion: 2
+guid: 0f3fbf7d53b304341ad0b36c189a5d3c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1596880355750630447
+    second: 032-Heaven01_0
+  - first:
+      213: -6656704319633060136
+    second: 032-Heaven01_1
+  - first:
+      213: -6967022280206507767
+    second: 032-Heaven01_2
+  - first:
+      213: -3534245940451543431
+    second: 032-Heaven01_3
+  - first:
+      213: 6088491074599422427
+    second: 032-Heaven01_4
+  - first:
+      213: -570836896206054975
+    second: 032-Heaven01_5
+  - first:
+      213: 5517615072136247406
+    second: 032-Heaven01_6
+  - first:
+      213: 1733909294142087250
+    second: 032-Heaven01_7
+  - first:
+      213: 6969074562404410353
+    second: 032-Heaven01_8
+  - first:
+      213: 1754806709959202878
+    second: 032-Heaven01_9
+  - first:
+      213: -8537891633725811644
+    second: 032-Heaven01_10
+  - first:
+      213: 5625097585875267198
+    second: 032-Heaven01_11
+  - first:
+      213: -6919810301869414416
+    second: 032-Heaven01_12
+  - first:
+      213: 3699602531357114973
+    second: 032-Heaven01_13
+  - first:
+      213: -5570900061189052710
+    second: 032-Heaven01_14
+  - first:
+      213: 2005637003521621855
+    second: 032-Heaven01_15
+  - first:
+      213: -2010731709375527062
+    second: 032-Heaven01_16
+  - first:
+      213: 7727668456899773394
+    second: 032-Heaven01_17
+  - first:
+      213: 2130400944822403492
+    second: 032-Heaven01_18
+  - first:
+      213: -6422943691593343671
+    second: 032-Heaven01_19
+  - first:
+      213: 3599316683662549974
+    second: 032-Heaven01_20
+  - first:
+      213: -7443153429392942472
+    second: 032-Heaven01_21
+  - first:
+      213: 9171561205351474995
+    second: 032-Heaven01_22
+  - first:
+      213: -2323601594565007672
+    second: 032-Heaven01_23
+  - first:
+      213: -8191273475012127193
+    second: 032-Heaven01_24
+  - first:
+      213: -3226573998787263249
+    second: 032-Heaven01_25
+  - first:
+      213: -5685911954809874764
+    second: 032-Heaven01_26
+  - first:
+      213: -2738334311802636594
+    second: 032-Heaven01_27
+  - first:
+      213: 112809677491093734
+    second: 032-Heaven01_28
+  - first:
+      213: -2647527131644501318
+    second: 032-Heaven01_29
+  - first:
+      213: -3965893931700643848
+    second: 032-Heaven01_30
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 032-Heaven01_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 992
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db2faee6cdb6d9e0800000000000000
+      internalID: -1596880355750630447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 032-Heaven01_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 608
+        width: 32
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de8675a0b2ae93a0800000000000000
+      internalID: -6656704319633060136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 032-Heaven01_2
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 608
+        width: 30
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9012f06262a205f90800000000000000
+      internalID: -6967022280206507767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 032-Heaven01_3
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 512
+        width: 90
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 976f48ada06d3fec0800000000000000
+      internalID: -3534245940451543431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 032-Heaven01_4
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 620
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd982a7cf5aae7450800000000000000
+      internalID: 6088491074599422427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 032-Heaven01_5
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 609
+        width: 58
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c993f80edaf318f0800000000000000
+      internalID: -570836896206054975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 032-Heaven01_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68b50eaca1829c40800000000000000
+      internalID: 5517615072136247406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 032-Heaven01_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 192
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250661ef055101810800000000000000
+      internalID: 1733909294142087250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 032-Heaven01_8
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 160
+        width: 54
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f36359046027b060800000000000000
+      internalID: 6969074562404410353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 032-Heaven01_9
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 991
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e381794c7635a5810800000000000000
+      internalID: 1754806709959202878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 032-Heaven01_10
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 999
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4445ef87bc0538980800000000000000
+      internalID: -8537891633725811644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 032-Heaven01_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 959
+        width: 33
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ea009837c501e40800000000000000
+      internalID: 5625097585875267198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 032-Heaven01_12
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 961
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f72cf37135e7ff90800000000000000
+      internalID: -6919810301869414416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 032-Heaven01_13
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 958
+        width: 30
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d524da3a6e0a75330800000000000000
+      internalID: 3699602531357114973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 032-Heaven01_14
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 959
+        width: 63
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6ef9509ef20b2b0800000000000000
+      internalID: -5570900061189052710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 032-Heaven01_15
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 864
+        width: 93
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5ff8477a3475db10800000000000000
+      internalID: 2005637003521621855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 032-Heaven01_16
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 896
+        width: 65
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a67ce04e9227814e0800000000000000
+      internalID: -2010731709375527062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 032-Heaven01_17
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 802
+        width: 94
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d38083c4813e3b60800000000000000
+      internalID: 7727668456899773394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 032-Heaven01_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 769
+        width: 96
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a1cb493f54b09d10800000000000000
+      internalID: 2130400944822403492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 032-Heaven01_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 738
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d1e322ebe1dd6a0800000000000000
+      internalID: -6422943691593343671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 032-Heaven01_20
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 738
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d3e7db247753f130800000000000000
+      internalID: 3599316683662549974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 032-Heaven01_21
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 738
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87a9d48346b94b890800000000000000
+      internalID: -7443153429392942472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 032-Heaven01_22
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 719
+        width: 94
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3376ab0c25ee74f70800000000000000
+      internalID: 9171561205351474995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 032-Heaven01_23
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 706
+        width: 32
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6eb6429a8e0cfd0800000000000000
+      internalID: -2323601594565007672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 032-Heaven01_24
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 737
+        width: 30
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72692d77c20c25e80800000000000000
+      internalID: -8191273475012127193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 032-Heaven01_25
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 832
+        width: 66
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe406c01b08e833d0800000000000000
+      internalID: -3226573998787263249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 032-Heaven01_26
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 811
+        width: 34
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b6196dc3359711b0800000000000000
+      internalID: -5685911954809874764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 032-Heaven01_27
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 768
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec67db4a37b7ff9d0800000000000000
+      internalID: -2738334311802636594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 032-Heaven01_28
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 801
+        width: 97
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e04512ddc7c09100800000000000000
+      internalID: 112809677491093734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 032-Heaven01_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 671
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab2ee19d918124bd0800000000000000
+      internalID: -2647527131644501318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 032-Heaven01_30
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 673
+        width: 34
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f71b183b7056f8c0800000000000000
+      internalID: -3965893931700643848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

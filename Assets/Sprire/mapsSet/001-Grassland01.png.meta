@@ -1,0 +1,1128 @@
+fileFormatVersion: 2
+guid: 8a20025c7dff92d4a8d101d0ac97f917
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4847301510683297376
+    second: 001-Grassland01_0
+  - first:
+      213: -2227984749250108016
+    second: 001-Grassland01_1
+  - first:
+      213: -2196352149744545641
+    second: 001-Grassland01_2
+  - first:
+      213: 7168118030078192077
+    second: 001-Grassland01_3
+  - first:
+      213: -925233869136454543
+    second: 001-Grassland01_4
+  - first:
+      213: -219674194945370843
+    second: 001-Grassland01_5
+  - first:
+      213: 7215195559188931629
+    second: 001-Grassland01_6
+  - first:
+      213: -7718054160498834403
+    second: 001-Grassland01_7
+  - first:
+      213: -302505542733045004
+    second: 001-Grassland01_8
+  - first:
+      213: 5472719038813972965
+    second: 001-Grassland01_9
+  - first:
+      213: 8302971239819089630
+    second: 001-Grassland01_10
+  - first:
+      213: 979849869848491867
+    second: 001-Grassland01_11
+  - first:
+      213: 3304415460325933329
+    second: 001-Grassland01_12
+  - first:
+      213: 5852325824269059545
+    second: 001-Grassland01_13
+  - first:
+      213: 6740815008874711838
+    second: 001-Grassland01_14
+  - first:
+      213: 8726253483892742678
+    second: 001-Grassland01_15
+  - first:
+      213: 3693286587112114688
+    second: 001-Grassland01_16
+  - first:
+      213: -5274450650852068263
+    second: 001-Grassland01_17
+  - first:
+      213: 20210954411190528
+    second: 001-Grassland01_18
+  - first:
+      213: 7793362701586493581
+    second: 001-Grassland01_19
+  - first:
+      213: 6173545733529782958
+    second: 001-Grassland01_20
+  - first:
+      213: -8173798793905843857
+    second: 001-Grassland01_21
+  - first:
+      213: -4820748238899143943
+    second: 001-Grassland01_22
+  - first:
+      213: 2702126210189011658
+    second: 001-Grassland01_23
+  - first:
+      213: -2823042971598403253
+    second: 001-Grassland01_24
+  - first:
+      213: -4895421633400866076
+    second: 001-Grassland01_25
+  - first:
+      213: 410232811778799732
+    second: 001-Grassland01_26
+  - first:
+      213: -4055523493599282726
+    second: 001-Grassland01_27
+  - first:
+      213: -2460761490703921590
+    second: 001-Grassland01_28
+  - first:
+      213: 6175493301015926892
+    second: 001-Grassland01_29
+  - first:
+      213: -5103697363627155778
+    second: 001-Grassland01_30
+  - first:
+      213: 677770024363735196
+    second: 001-Grassland01_31
+  - first:
+      213: -3822129718743814108
+    second: 001-Grassland01_32
+  - first:
+      213: -1290307885326047459
+    second: 001-Grassland01_33
+  - first:
+      213: 2740354572851516996
+    second: 001-Grassland01_34
+  - first:
+      213: 1093842859569341182
+    second: 001-Grassland01_35
+  - first:
+      213: -6015456995933832021
+    second: 001-Grassland01_36
+  - first:
+      213: -5308318811607237777
+    second: 001-Grassland01_37
+  - first:
+      213: 2701397968155929196
+    second: 001-Grassland01_38
+  - first:
+      213: 2128854591053852367
+    second: 001-Grassland01_39
+  - first:
+      213: -1375271160650867207
+    second: 001-Grassland01_40
+  - first:
+      213: 905520512797972955
+    second: 001-Grassland01_41
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 001-Grassland01_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 542
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a9f18845fceabcb0800000000000000
+      internalID: -4847301510683297376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 546
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095a5f7ccab9411e0800000000000000
+      internalID: -2227984749250108016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7909fc84b5df481e0800000000000000
+      internalID: -2196352149744545641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_3
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 545
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc922eabe554a7360800000000000000
+      internalID: 7168118030078192077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_4
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 572
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17c16f7b2b8e823f0800000000000000
+      internalID: -925233869136454543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_5
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 570
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52516fbcb7f83fcf0800000000000000
+      internalID: -219674194945370843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_6
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 547
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d24ae622226812460800000000000000
+      internalID: 7215195559188931629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 544
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d14cd3e02a6f3e490800000000000000
+      internalID: -7718054160498834403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_8
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 561
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f26fc6cfc84dcbf0800000000000000
+      internalID: -302505542733045004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_9
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 554
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e9260858f003fb40800000000000000
+      internalID: 5472719038813972965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_10
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 546
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed693b10a541a3370800000000000000
+      internalID: 8302971239819089630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_11
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 544
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b573881e340299d00800000000000000
+      internalID: 979849869848491867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_12
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 532
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11149078a54abdd20800000000000000
+      internalID: 3304415460325933329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_13
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 520
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d507698453a73150800000000000000
+      internalID: 5852325824269059545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_14
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1b4994498f2c8d50800000000000000
+      internalID: 6740815008874711838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_15
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 513
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a11775f41e91970800000000000000
+      internalID: 8726253483892742678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_16
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 531
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00a48864590314330800000000000000
+      internalID: 3693286587112114688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_17
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 484
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95472aa04136dc6b0800000000000000
+      internalID: -5274450650852068263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_18
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 512
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 009204681cdc74000800000000000000
+      internalID: 20210954411190528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_19
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 512
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8077d90616972c60800000000000000
+      internalID: 7793362701586493581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_20
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 516
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaacba3c227dca550800000000000000
+      internalID: 6173545733529782958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_21
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 519
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61d9b7bd45d09e80800000000000000
+      internalID: -8173798793905843857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_22
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 423
+        width: 77
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa93d4a403491db0800000000000000
+      internalID: -4820748238899143943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_23
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 416
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acaa690c871ef7520800000000000000
+      internalID: 2702126210189011658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_24
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 481
+        width: 10
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b49c63cdf5982d8d0800000000000000
+      internalID: -2823042971598403253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_25
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 482
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eaf06326f7ff0cb0800000000000000
+      internalID: -4895421633400866076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_26
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 452
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 478f84d919071b500800000000000000
+      internalID: 410232811778799732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_27
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 449
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad973c1aed2e7b7c0800000000000000
+      internalID: -4055523493599282726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_28
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 448
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4ec1ad367e99ddd0800000000000000
+      internalID: -2460761490703921590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_29
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 256
+        width: 115
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68dbd72072c3b550800000000000000
+      internalID: 6175493301015926892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_30
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 257
+        width: 126
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebed7efc9460c29b0800000000000000
+      internalID: -5103697363627155778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_31
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 161
+        width: 7
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c98bb950f3ce76900800000000000000
+      internalID: 677770024363735196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_32
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 161
+        width: 7
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 420bfc4754115fac0800000000000000
+      internalID: -3822129718743814108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_33
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 213
+        width: 94
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d17614c80d7e71ee0800000000000000
+      internalID: -1290307885326047459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_34
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 0
+        width: 144
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4469e6907f1b70620800000000000000
+      internalID: 2740354572851516996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_35
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 75
+        width: 66
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef26abc094c1e2f00800000000000000
+      internalID: 1093842859569341182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_36
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 484
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bacb9b3cbbdc48ca0800000000000000
+      internalID: -6015456995933832021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_37
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 482
+        width: 33
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6b70af5a201556b0800000000000000
+      internalID: -5308318811607237777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_38
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 74
+        width: 33
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a65e0b32b4d7520800000000000000
+      internalID: 2701397968155929196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_39
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 105
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce693ea8f53b8d10800000000000000
+      internalID: 2128854591053852367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_40
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 155
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fdd0977a2e0aece0800000000000000
+      internalID: -1375271160650867207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001-Grassland01_41
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 188
+        width: 91
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd91726db1e019c00800000000000000
+      internalID: 905520512797972955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -10,7 +10,7 @@ public class PlayerMove : MonoBehaviour
     Rigidbody2D rigidbody2D;
     void Start()
     {
-        speed = 3f;
+        speed = 5f;
         rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
     }

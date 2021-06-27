@@ -7,7 +7,7 @@ public class people1 : MonoBehaviour
     // Start is called before the first frame update
     float speed;
     Animator anim;
-    Rigidbody2D rigidbody2D;
+    Rigidbody2D rig;
     bool rotate = false;
     float now, timeDelay;
     void Start()
@@ -15,7 +15,7 @@ public class people1 : MonoBehaviour
         now = Time.time;
         timeDelay = Random.Range(4, 6);
         speed = 1.5f;
-        rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
+        rig = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
     }
 
@@ -30,7 +30,7 @@ public class people1 : MonoBehaviour
             if (status == 0)
             {
                 anim.SetFloat("Blend", 0f);
-                rigidbody2D.velocity = new Vector2(0, -1) * speed;
+                rig.velocity = new Vector2(0, -1) * speed;
             }
 
             if (status == 1)
@@ -44,7 +44,7 @@ public class people1 : MonoBehaviour
             if (status == 1)
             {
                 anim.SetFloat("Blend", 0.33f);
-                rigidbody2D.velocity = new Vector2(-1, 0) * speed;
+                rig.velocity = new Vector2(-1, 0) * speed;
             }
 
             if (status == 2)
@@ -59,12 +59,12 @@ public class people1 : MonoBehaviour
             {
 
                 anim.SetFloat("Blend", 0.66f);
-                rigidbody2D.velocity = new Vector2(1, 0) * speed;
+                rig.velocity = new Vector2(1, 0) * speed;
             }
             if (status == 3)
             {
                 anim.SetFloat("Blend", 1f);
-                rigidbody2D.velocity = new Vector2(0, 1) * speed;
+                rig.velocity = new Vector2(0, 1) * speed;
             }
             now = Time.time;
         }
@@ -73,7 +73,7 @@ public class people1 : MonoBehaviour
             if (Time.time > now + 1)
             {
                 anim.enabled = false;
-                rigidbody2D.velocity = new Vector2(0, 0) * speed;
+                rig.velocity = new Vector2(0, 0) * speed;
             }
         }
     }

@@ -7,14 +7,14 @@ public class BatMove : MonoBehaviour
     // Start is called before the first frame update
     float speed;
     Animator anim;
-    Rigidbody2D rigidbody2D;
+    Rigidbody2D rig;
     float now;
     
     void Start()
     {
         now = Time.time;
         speed = 6f;
-        rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
+        rig = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
     }
 
@@ -27,22 +27,22 @@ public class BatMove : MonoBehaviour
             if (status == 0)
             {
                 anim.SetFloat("Blend", 0f);
-                rigidbody2D.velocity = new Vector2(0, -1) * speed;
+                rig.velocity = new Vector2(0, -1) * speed;
             }
             if (status == 1)
             {
                 anim.SetFloat("Blend", 0.33f);
-                rigidbody2D.velocity = new Vector2(-1, 0) * speed;
+                rig.velocity = new Vector2(-1, 0) * speed;
             }
             if (status == 2)
             {
                 anim.SetFloat("Blend", 0.66f);
-                rigidbody2D.velocity = new Vector2(1, 0) * speed;
+                rig.velocity = new Vector2(1, 0) * speed;
             }
             if (status == 3)
             {
                 anim.SetFloat("Blend", 1f);
-                rigidbody2D.velocity = new Vector2(0, 1) * speed;
+                rig.velocity = new Vector2(0, 1) * speed;
             }
             now = Time.time;
         }
@@ -50,7 +50,7 @@ public class BatMove : MonoBehaviour
         {
             if (Time.time > now + 1)
             {
-                rigidbody2D.velocity = new Vector2(0, 0) * speed;
+                rig.velocity = new Vector2(0, 0) * speed;
             }
         }
     }

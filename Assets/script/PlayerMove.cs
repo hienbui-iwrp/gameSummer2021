@@ -7,11 +7,11 @@ public class PlayerMove : MonoBehaviour
     // Start is called before the first frame update
     float speed;
     Animator anim;
-    Rigidbody2D rigidbody2D;
+    Rigidbody2D rig;
     void Start()
     {
         speed = 5f;
-        rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
+        rig = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
     }
 
@@ -24,29 +24,29 @@ public class PlayerMove : MonoBehaviour
             if (Input.GetKey("s"))
             {
                 anim.SetFloat("Blend", 0f);
-                rigidbody2D.velocity = new Vector2(0, -1) * speed;
+                rig.velocity = new Vector2(0, -1) * speed;
             }
             if (Input.GetKey("a"))
             {
                 anim.SetFloat("Blend", 0.33f);
-                rigidbody2D.velocity = new Vector2(-1, 0) * speed;
+                rig.velocity = new Vector2(-1, 0) * speed;
             }
             if (Input.GetKey("d"))
             {
                 anim.SetFloat("Blend", 0.66f);
-                rigidbody2D.velocity = new Vector2(1, 0) * speed;
+                rig.velocity = new Vector2(1, 0) * speed;
             }
             if (Input.GetKey("w"))
             {
                 anim.SetFloat("Blend", 1f);
-                rigidbody2D.velocity = new Vector2(0, 1) * speed;
+                rig.velocity = new Vector2(0, 1) * speed;
             }
 
         }
         else
         {
             anim.enabled = false;
-            rigidbody2D.velocity = new Vector2(0, 0) * speed;
+            rig.velocity = new Vector2(0, 0) * speed;
         }
     }
 }

@@ -8,10 +8,11 @@ public class people3 : MonoBehaviour
     float speed;
     Animator anim;
     Rigidbody2D rigidbody2D;
-    float now;
+    float now, timeDelay;
     void Start()
     {
         now = Time.time;
+        timeDelay = Random.Range(3, 5);
         speed = 1.5f;
         rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
@@ -20,7 +21,7 @@ public class people3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time > now + 4)
+        if (Time.time > now + timeDelay)
         {
             speed = Random.Range(3, 4);
             int status = (int)Random.Range(0f, 3.9f);

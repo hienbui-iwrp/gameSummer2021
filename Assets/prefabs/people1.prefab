@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 8845718601261390267}
   - component: {fileID: 8845718601261390269}
   - component: {fileID: 8845718601261390268}
+  - component: {fileID: 6097694637157665186}
   m_Layer: 0
   m_Name: people1
-  m_TagString: Untagged
+  m_TagString: people
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8845718601261390270}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.91, y: -0.78, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -151,7 +152,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.08413124, y: -0.05177307}
+  m_Offset: {x: 0.02012533, y: -0.26512602}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -162,5 +163,18 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6290784, y: 0.7411351}
+  m_Size: {x: 0.5165832, y: 0.31442922}
   m_EdgeRadius: 0
+--- !u!114 &6097694637157665186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8845718601261390270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce843dbaffa53e7419021806c59eef04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beSick: 0

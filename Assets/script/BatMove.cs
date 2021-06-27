@@ -9,10 +9,11 @@ public class BatMove : MonoBehaviour
     Animator anim;
     Rigidbody2D rigidbody2D;
     float now;
+    
     void Start()
     {
         now = Time.time;
-        speed = 4f;
+        speed = 6f;
         rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
     }
@@ -20,9 +21,8 @@ public class BatMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time > now + 2.5)
+        if (Time.time > now + 2)
         {
-            speed = Random.Range(1, 3);
             int status = (int)Random.Range(0f, 3.9f);
             if (status == 0)
             {

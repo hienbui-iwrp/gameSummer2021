@@ -12,7 +12,7 @@ public class findPeople : MonoBehaviour
     {
         foreach (people someOne in people.getPeopleList())
         {
-            if (someOne.beSick == true) continue;
+            if (someOne.beSick == true || someOne == null) continue;
             if (Vector2.Distance(transform.position, someOne.transform.position) < range)
             {
                 Vector2 direct = someOne.transform.position - bat.transform.position;

@@ -5,7 +5,7 @@ using UnityEngine;
 public class cameraFollow : MonoBehaviour
 {
     public Transform player;
-    Vector3 offset = new Vector3(0, 0, -10);
+    Vector3 offset = new Vector3(0, 0, -50);
 
     private void FixedUpdate()
     {

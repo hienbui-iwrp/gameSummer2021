@@ -18,7 +18,7 @@ public class createBat : MonoBehaviour
     void Update()
     {
         if (numBat < 5)
-            if (Time.time > now + 15f)
+            if (Time.time > now + 5f)
             {
                 Instantiate<GameObject>(bat, door.position, Quaternion.identity);
                 now = Time.time;

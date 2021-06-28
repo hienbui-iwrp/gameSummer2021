@@ -10765,6 +10765,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scene: inGame
+  playerPosition: {x: -16.5, y: 11}
+  playerStorage: {fileID: 11400000, guid: 3e50f820aeb9331428d3bb0fc21a7f0c, type: 2}
 --- !u!1001 &1145217424
 PrefabInstance:
   m_ObjectHideFlags: 0

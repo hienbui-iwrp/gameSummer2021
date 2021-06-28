@@ -5,15 +5,14 @@ using UnityEngine;
 public class BatMove : MonoBehaviour
 {
     // Start is called before the first frame update
-    float speed;
+    public float speed = 6f;
     Animator anim;
     Rigidbody2D rig;
     float now;
-    
+
     void Start()
     {
         now = Time.time;
-        speed = 6f;
         rig = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
     }

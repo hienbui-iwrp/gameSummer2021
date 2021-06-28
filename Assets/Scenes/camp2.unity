@@ -5798,6 +5798,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scene: inGame
+  playerPosition: {x: -6.5, y: 32}
+  playerStorage: {fileID: 11400000, guid: 3e50f820aeb9331428d3bb0fc21a7f0c, type: 2}
 --- !u!1 &1079633208
 GameObject:
   m_ObjectHideFlags: 0

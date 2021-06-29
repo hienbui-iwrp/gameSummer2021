@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3239633661575610075}
   - component: {fileID: 3239633661575610074}
   - component: {fileID: 3239633661575610073}
-  - component: {fileID: 3239633661575610072}
   - component: {fileID: 3239633661575610087}
   - component: {fileID: 3239633661575610086}
+  - component: {fileID: 7527757912321062695}
   m_Layer: 0
   m_Name: Player
   m_TagString: player
@@ -105,18 +105,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3239633661575610072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3239633661575610085}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eca07886a05afe047aac87d64c15ab92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &3239633661575610087
 Rigidbody2D:
   serializedVersion: 4
@@ -164,3 +152,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5808884, y: 0.3751235}
   m_EdgeRadius: 0
+--- !u!114 &7527757912321062695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3239633661575610085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9d6b8ed4a3319240b04294cc893588d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stone: {fileID: 817299630533774046, guid: cf22420d68fe666458edcbc0f6674811, type: 3}

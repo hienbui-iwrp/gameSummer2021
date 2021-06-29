@@ -8,6 +8,8 @@ TagManager:
   - limit
   - bat
   - people
+  - stone
+  - bullet
   layers:
   - Default
   - TransparentFX

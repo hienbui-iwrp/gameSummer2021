@@ -11,6 +11,7 @@ public class createBat : MonoBehaviour
     float now;
     void Start()
     {
+        batInCave.numMaxCave = 5;
         now = Time.time;
     }
 
@@ -18,11 +19,12 @@ public class createBat : MonoBehaviour
     void Update()
     {
         if (numBat < 5)
-            if (Time.time > now + 5f)
+            if (Time.time > now + 10f)
             {
                 Instantiate<GameObject>(bat, door.position, Quaternion.identity);
                 now = Time.time;
                 numBat++;
+                batInCave.numMaxCave--;
             }
     }
 }

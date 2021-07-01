@@ -5,40 +5,84 @@ using UnityEngine;
 public class people : MonoBehaviour
 {
     // Start is called before the first frame update
-    public static List<people> peopleList = new List<people>();
+    public static List<people> allPeople = new List<people>();
+    public bool vaccine = false;
     public bool beSick = false;
     public HPbar hpBar;
-    float sickDelay = 10f;
+    public GameObject virus;
+    public GameObject shield;
+    public Transform isolationArea;
+    public peopleMove move;
+    Transform oldPosition;
+    float sickDelay = 4f;
     float now;
     int hp = 10;
-    public static List<people> getPeopleList()
-    {
-        return peopleList;
-    }
     void Start()
     {
         hpBar.setMaxHP(hp);
         now = Time.time;
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        if (!beSick) peopleList.Add(this);
-        else peopleList.Remove(this);
+        //list all people
+        allPeople.Add(this);
+        virus.SetActive(false);
+        shield.SetActive(false);
+        oldPosition = gameObject.transform;
     }
     private void FixedUpdate()
     {
         if (beSick)
         {
-            if (Time.time > now + sickDelay) takeDmg();
+            sick();
         }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag.Equals("bat")) beSick = true;
+        if (other.tag.Equals("bat"))
+        {
+            if (!vaccine)
+            {
+                virus.SetActive(true);
+                beSick = true;
+            }
+        }
         if (other.tag.Equals("bullet"))
         {
             takeDmg();
+        }
+    }
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.tag.Equals("hopital"))
+        {
+            healing();
+        }
+    }
+    public void takeVaccine()
+    {
+        vaccine = true;
+        shield.SetActive(true);
+    }
+    public void isolate()
+    {
+        gameObject.transform.position = isolationArea.position;
+        GetComponent<peopleMove>().enabled = false;
+    }
+    void sick()
+    {
+        if (Time.time > now + sickDelay)
+        {
+            takeDmg();
+            now = Time.time;
+        }
+    }
+    void healing()
+    {
+        hp += 2;
+        hpBar.setCurHP(hp);
+        if (hp == 10)
+        {
+            beSick = false;
+            transform.position = oldPosition.position;
+            GetComponent<peopleMove>().enabled = true;
         }
     }
     void takeDmg()
@@ -47,9 +91,8 @@ public class people : MonoBehaviour
         hpBar.setCurHP(hp);
         if (hp <= 0)
         {
+            allPeople.Remove(this);
             Destroy(gameObject);
-            gameControl.exit();
         }
-
     }
 }

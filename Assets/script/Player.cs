@@ -8,17 +8,20 @@ public class Player : MonoBehaviour
     public static float speed;
     public static Vector2 startPosition = new Vector2(8.5f, -3);
     public GameObject stone;
+
+    public static int numVac = 0;
+    public static int numMaxVac = 5;
     int direction = 0;
     Animator anim;
     Rigidbody2D rig;
-    int numStone = 0;
-    int numVaxcin = 0;
     void Start()
     {
         speed = 5f;
         rig = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
         transform.position = startPosition;
+
+
     }
 
     // Update is called once per frame
@@ -66,9 +69,9 @@ public class Player : MonoBehaviour
     }
     void throwStone()
     {
-        if (Input.GetKeyDown("space") && numStone > 0)
+        if (Input.GetKeyDown("space") && numStone.num > 0)
         {
-            numStone--;
+            numStone.num--;
             GameObject Stone = Instantiate<GameObject>(stone, transform.position, Quaternion.identity);
             Rigidbody2D rigStone = Stone.GetComponent<Rigidbody2D>();
             switch (direction)
@@ -89,7 +92,27 @@ public class Player : MonoBehaviour
                     break;
             }
             Destroy(Stone, 0.8f);
-
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag.Equals("stone"))
+        {
+            if (Input.GetKeyDown("z"))
+            {
+                takeStone();
+            }
+        }
+        if (other.tag.Equals("vaccine"))
+        {
+            if (Input.GetKeyDown("z"))
+            {
+                if (numVac < numMaxVac)
+                {
+                    takeVaccine();
+                    Destroy(other.gameObject);
+                }
+            }
         }
     }
     private void OnTriggerStay2D(Collider2D other)
@@ -101,18 +124,80 @@ public class Player : MonoBehaviour
                 takeStone();
             }
         }
+        if (other.tag.Equals("vaccine"))
+        {
+            if (Input.GetKeyDown("z"))
+            {
+                if (numVac < numMaxVac)
+                {
+                    takeVaccine();
+                    Destroy(other.gameObject);
+                }
+            }
+        }
     }
-
-    void takeVaxcin()
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        if (numVaxcin < 3) numVaxcin++;
+        if (other.collider.tag.Equals("people"))
+        {
+            if (Input.GetKeyDown("x"))
+            {
+                people someOne;
+                someOne = other.gameObject.GetComponent<people>();
+                if (someOne.beSick)
+                {
+                    //Isolate
+                    someOne.isolate();
+                }
+                else
+                {
+                    if (numVac > 0)
+                    {
+                        //use vaccine
+                        if (!someOne.vaccine)
+                        {
+                            someOne.takeVaccine();
+                            numVac--;
+                        }
+                    }
+                }
+            }
+        }
     }
-    void useVaxcin()
+    private void OnCollisionStay2D(Collision2D other)
     {
-        if (numVaxcin > 0) numVaxcin--;
+        if (other.collider.tag.Equals("people"))
+        {
+            if (Input.GetKeyDown("x"))
+            {
+                people someOne;
+                someOne = other.gameObject.GetComponent<people>();
+                if (someOne.beSick)
+                {
+                    //Isolate
+                    someOne.isolate();
+                }
+                else
+                {
+                    if (numVac > 0)
+                    {
+                        //use vaccine
+                        if (!someOne.vaccine)
+                        {
+                            someOne.takeVaccine();
+                            numVac--;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    void takeVaccine()
+    {
+        numVac++;
     }
     void takeStone()
     {
-        numStone = 5;
+        numStone.num = numStone.max;
     }
 }

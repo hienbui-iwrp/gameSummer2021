@@ -1,0 +1,504 @@
+fileFormatVersion: 2
+guid: b6e4177ce210940438e44669aac918bc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1789639027034244885
+    second: Townfolk-Child-F-removebg-preview_0
+  - first:
+      213: -5764399883709094861
+    second: Townfolk-Child-F-removebg-preview_1
+  - first:
+      213: -7117261885536213226
+    second: Townfolk-Child-F-removebg-preview_2
+  - first:
+      213: -2489710636478661792
+    second: Townfolk-Child-F-removebg-preview_3
+  - first:
+      213: -8000174330844962196
+    second: Townfolk-Child-F-removebg-preview_4
+  - first:
+      213: -589371270284872036
+    second: Townfolk-Child-F-removebg-preview_5
+  - first:
+      213: -5468911846257664679
+    second: Townfolk-Child-F-removebg-preview_6
+  - first:
+      213: -3983723480488023194
+    second: Townfolk-Child-F-removebg-preview_7
+  - first:
+      213: -8385615146228013287
+    second: Townfolk-Child-F-removebg-preview_8
+  - first:
+      213: 3771693597312267175
+    second: Townfolk-Child-F-removebg-preview_9
+  - first:
+      213: -2937017524899616765
+    second: Townfolk-Child-F-removebg-preview_10
+  - first:
+      213: 6454580698191361113
+    second: Townfolk-Child-F-removebg-preview_11
+  - first:
+      213: -5490820133025749656
+    second: Townfolk-Child-F-removebg-preview_12
+  - first:
+      213: 8337446513496544989
+    second: Townfolk-Child-F-removebg-preview_13
+  - first:
+      213: -2487810438944986179
+    second: Townfolk-Child-F-removebg-preview_14
+  - first:
+      213: -6832800990118323397
+    second: Townfolk-Child-F-removebg-preview_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Townfolk-Child-F-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 95
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5174d82963316d810800000000000000
+      internalID: 1789639027034244885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Townfolk-Child-F-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 97
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 334673cc8dcb000b0800000000000000
+      internalID: -5764399883709094861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Townfolk-Child-F-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 96
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617ef2326086a3d90800000000000000
+      internalID: -7117261885536213226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Townfolk-Child-F-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 60
+        width: 54
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b7d2ffd55c27dd0800000000000000
+      internalID: -2489710636478661792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Townfolk-Child-F-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 64
+        width: 11
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c62a9c435dba9f090800000000000000
+      internalID: -8000174330844962196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Townfolk-Child-F-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 65
+        width: 11
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9679d9c3f122d7f0800000000000000
+      internalID: -589371270284872036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Townfolk-Child-F-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 64
+        width: 11
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95dd2efb6a58a14b0800000000000000
+      internalID: -5468911846257664679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Townfolk-Child-F-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 32
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66be026e998f6b8c0800000000000000
+      internalID: -3983723480488023194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Townfolk-Child-F-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 33
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917a1f1147f40ab80800000000000000
+      internalID: -8385615146228013287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Townfolk-Child-F-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 32
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a3b96de75fb75430800000000000000
+      internalID: 3771693597312267175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Townfolk-Child-F-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 31
+        width: 37
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308e2414f1e9d37d0800000000000000
+      internalID: -2937017524899616765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Townfolk-Child-F-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 31
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 954f9c972f6439950800000000000000
+      internalID: 6454580698191361113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Townfolk-Child-F-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 0
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 865ef6d3e20bcc3b0800000000000000
+      internalID: -5490820133025749656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Townfolk-Child-F-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 1
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd6d7ca2e6f84b370800000000000000
+      internalID: 8337446513496544989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Townfolk-Child-F-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 0
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbbec263695897dd0800000000000000
+      internalID: -2487810438944986179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Townfolk-Child-F-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 10
+        width: 44
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3b5f0383b30d21a0800000000000000
+      internalID: -6832800990118323397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

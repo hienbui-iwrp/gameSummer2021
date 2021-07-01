@@ -5,6 +5,7 @@ using UnityEngine;
 public class batTakeDmg : MonoBehaviour
 {
     // Start is called before the first frame update
+    public static int batKilled = 0;
     public HPbar hpBar;
     int hp = 4;
     private void Start()
@@ -22,6 +23,7 @@ public class batTakeDmg : MonoBehaviour
                 Destroy(gameObject);
                 Destroy(other.gameObject);
                 batInCave.numMaxCave--;
+                batKilled++;
             }
         }
     }

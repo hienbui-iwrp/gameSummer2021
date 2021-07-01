@@ -39,18 +39,23 @@
      <Compile Include="Assets\script\BatMove.cs" />
      <Compile Include="Assets\script\findPeople.cs" />
      <Compile Include="Assets\script\sceneTransition.cs" />
-     <Compile Include="Assets\script\people1.cs" />
+     <Compile Include="Assets\script\gameControl.cs" />
+     <Compile Include="Assets\script\numStone.cs" />
      <Compile Include="Assets\script\batInCave.cs" />
      <Compile Include="Assets\script\people.cs" />
      <Compile Include="Assets\script\Player.cs" />
      <Compile Include="Assets\script\createBat.cs" />
-     <Compile Include="Assets\script\batDestroy.cs" />
-     <Compile Include="Assets\script\people3.cs" />
-     <Compile Include="Assets\script\cameraFollow.cs" />
-     <Compile Include="Assets\script\batDestroyCave.cs" />
      <Compile Include="Assets\script\batTakeDmg.cs" />
-     <Compile Include="Assets\script\gameControl.cs" />
+     <Compile Include="Assets\script\batDestroy.cs" />
+     <Compile Include="Assets\script\numPeople.cs" />
+     <Compile Include="Assets\script\numVaccine.cs" />
+     <Compile Include="Assets\script\bagInfo.cs" />
+     <Compile Include="Assets\script\cameraFollow.cs" />
+     <Compile Include="Assets\script\numViruss.cs" />
+     <Compile Include="Assets\script\peopleMove.cs" />
      <Compile Include="Assets\script\HPbar.cs" />
+     <Compile Include="Assets\script\batDestroyCave.cs" />
+     <Compile Include="Assets\script\numUseVaccine.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

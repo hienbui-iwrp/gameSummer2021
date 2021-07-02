@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     public static float speed;
     public static Vector2 startPosition = new Vector2(8.5f, -3);
     public GameObject stone;
-    public gameControl control;
+    public Note note;
     public static int numVac = 0;
     public static int numMaxVac = 5;
     int direction = 0;
@@ -94,7 +94,7 @@ public class Player : MonoBehaviour
                 }
                 Destroy(Stone, 0.8f);
             }
-            else control.outOfStone();
+            else note.outOfStone();
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -105,9 +105,9 @@ public class Player : MonoBehaviour
                 if (numStone.num < 10)
                 {
                     takeStone();
-                    control.takeStone();
+                    note.takeStone();
                 }
-                else control.fullStone();
+                else note.fullStone();
             }
         }
         if (other.tag.Equals("vaccine"))
@@ -118,9 +118,9 @@ public class Player : MonoBehaviour
                 {
                     takeVaccine();
                     Destroy(other.gameObject);
-                    control.takeVaccine();
+                    note.takeVaccine();
                 }
-                else control.fullVaccine();
+                else note.fullVaccine();
             }
         }
     }
@@ -133,9 +133,9 @@ public class Player : MonoBehaviour
                 if (numStone.num < 10)
                 {
                     takeStone();
-                    control.takeStone();
+                    note.takeStone();
                 }
-                else control.fullStone();
+                else note.fullStone();
             }
         }
         if (other.tag.Equals("vaccine"))
@@ -146,9 +146,9 @@ public class Player : MonoBehaviour
                 {
                     takeVaccine();
                     Destroy(other.gameObject);
-                    control.takeVaccine();
+                    note.takeVaccine();
                 }
-                else control.fullVaccine();
+                else note.fullVaccine();
             }
         }
     }
@@ -164,7 +164,7 @@ public class Player : MonoBehaviour
                 {
                     //Isolate
                     someOne.isolate();
-                    control.isolate();
+                    note.isolate();
                 }
                 else
                 {
@@ -175,10 +175,10 @@ public class Player : MonoBehaviour
                         {
                             someOne.takeVaccine();
                             numVac--;
-                            control.useVaccine();
+                            note.useVaccine();
                         }
                     }
-                    else control.outOfVaccine();
+                    else note.outOfVaccine();
                 }
             }
         }
@@ -195,7 +195,7 @@ public class Player : MonoBehaviour
                 {
                     //Isolate
                     someOne.isolate();
-                    control.isolate();
+                    note.isolate();
                 }
                 else
                 {
@@ -206,10 +206,10 @@ public class Player : MonoBehaviour
                         {
                             someOne.takeVaccine();
                             numVac--;
-                            control.useVaccine();
+                            note.useVaccine();
                         }
                     }
-                    else control.outOfVaccine();
+                    else note.outOfVaccine();
                 }
             }
         }

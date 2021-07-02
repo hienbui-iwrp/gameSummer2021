@@ -39,6 +39,7 @@
      <Compile Include="Assets\script\BatMove.cs" />
      <Compile Include="Assets\script\findPeople.cs" />
      <Compile Include="Assets\script\sceneTransition.cs" />
+     <Compile Include="Assets\script\numUseVaccine.cs" />
      <Compile Include="Assets\script\gameControl.cs" />
      <Compile Include="Assets\script\numStone.cs" />
      <Compile Include="Assets\script\batInCave.cs" />
@@ -55,7 +56,9 @@
      <Compile Include="Assets\script\peopleMove.cs" />
      <Compile Include="Assets\script\HPbar.cs" />
      <Compile Include="Assets\script\batDestroyCave.cs" />
-     <Compile Include="Assets\script\numUseVaccine.cs" />
+     <Compile Include="Assets\script\Point.cs" />
+     <Compile Include="Assets\script\Note.cs" />
+     <Compile Include="Assets\script\Menu.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

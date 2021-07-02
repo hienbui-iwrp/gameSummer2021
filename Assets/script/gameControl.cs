@@ -2,76 +2,45 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class gameControl : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject panel;
-    public Text note;
-    float wait;
-    private void Start()
-    {
-        wait = Time.time;
-        note.text = "";
-        panel.SetActive(false);
-    }
+
+    public GameObject point;
+    public GameObject info;
+    bool EndGame = false;
+    bool win = false;
     private void Update()
     {
-        if (Time.time > wait + 1f)
+        EndGame = true;
+        win = true;
+        foreach (people someOne in people.allPeople)
         {
-            panel.SetActive(false);
+            if (someOne.vaccine == false) EndGame = false;
         }
+        if (people.allPeople.Count <= 0)
+        {
+            EndGame = true;
+            win = false;
+        }
+        if (EndGame) exit();
     }
-    public void takeVaccine()
+    public void goMenu()
     {
-        panel.SetActive(true);
-        note.text = "Nhận được vaccine!";
-        wait = Time.time;
-    }
-    public void useVaccine()
-    {
-        panel.SetActive(true);
-        note.text = "Tiêm vaccine thành công!";
-        wait = Time.time;
-    }
-    public void fullVaccine()
-    {
-        panel.SetActive(true);
-        note.text = "Vaccine đã đầy!!!";
-        wait = Time.time;
-    }
-    public void outOfVaccine()
-    {
-        panel.SetActive(true);
-        note.text = "Chúng ta cần thêm vaccine!!!";
-        wait = Time.time;
-    }
-    public void takeStone()
-    {
-        panel.SetActive(true);
-        note.text = "Nhặt đá thành công!";
-        wait = Time.time;
-    }
-    public void fullStone()
-    {
-        panel.SetActive(true);
-        note.text = "Đá đã đầy!!!";
-        wait = Time.time;
-    }
-    public void outOfStone()
-    {
-        panel.SetActive(true);
-        note.text = "Không đủ đá!!!";
-        wait = Time.time;
-    }
-    public void isolate()
-    {
-        panel.SetActive(true);
-        note.text = "Cách ly thành công";
-        wait = Time.time;
+        SceneManager.LoadScene("Menu");
     }
     public void exit()
     {
-        Debug.Log("gameOver");
+        if (win) point.GetComponent<Point>().result.text = "Chiến thắng!!!";
+        else
+        {
+            point.GetComponent<Point>().result.text = "Thất bại";
+            point.GetComponent<Point>().bonus = 0;
+        }
+        point.GetComponent<Point>().enable();
+        info.SetActive(false);
+        Time.timeScale = 0;
     }
 }

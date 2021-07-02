@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class numPeople : MonoBehaviour
 {
+    public static int finalPeople = 0;
     public bagInfo peopleInfo;
     bool first = true;
     float wait;
@@ -19,6 +20,7 @@ public class numPeople : MonoBehaviour
             first = false;
         }
         peopleInfo.setNumber(countPeople());
+        finalPeople = countPeople();
     }
     int countPeople()
     {

@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     public static float speed;
     public static Vector2 startPosition = new Vector2(8.5f, -3);
     public GameObject stone;
-
+    public gameControl control;
     public static int numVac = 0;
     public static int numMaxVac = 5;
     int direction = 0;
@@ -69,30 +69,32 @@ public class Player : MonoBehaviour
     }
     void throwStone()
     {
-        if (Input.GetKeyDown("space") && numStone.num > 0)
-        {
-            numStone.num--;
-            GameObject Stone = Instantiate<GameObject>(stone, transform.position, Quaternion.identity);
-            Rigidbody2D rigStone = Stone.GetComponent<Rigidbody2D>();
-            switch (direction)
+        if (Input.GetKeyDown("space"))
+            if (numStone.num > 0)
             {
-                case 0:
-                    rigStone.velocity = new Vector2(0, -1) * 10;
-                    break;
-                case 1:
-                    rigStone.velocity = new Vector2(-1, 0) * 10;
-                    break;
-                case 2:
-                    rigStone.velocity = new Vector2(1, 0) * 10;
-                    break;
-                case 3:
-                    rigStone.velocity = new Vector2(0, 1) * 10;
-                    break;
-                default:
-                    break;
+                numStone.num--;
+                GameObject Stone = Instantiate<GameObject>(stone, transform.position, Quaternion.identity);
+                Rigidbody2D rigStone = Stone.GetComponent<Rigidbody2D>();
+                switch (direction)
+                {
+                    case 0:
+                        rigStone.velocity = new Vector2(0, -1) * 10;
+                        break;
+                    case 1:
+                        rigStone.velocity = new Vector2(-1, 0) * 10;
+                        break;
+                    case 2:
+                        rigStone.velocity = new Vector2(1, 0) * 10;
+                        break;
+                    case 3:
+                        rigStone.velocity = new Vector2(0, 1) * 10;
+                        break;
+                    default:
+                        break;
+                }
+                Destroy(Stone, 0.8f);
             }
-            Destroy(Stone, 0.8f);
-        }
+            else control.outOfStone();
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -100,7 +102,12 @@ public class Player : MonoBehaviour
         {
             if (Input.GetKeyDown("z"))
             {
-                takeStone();
+                if (numStone.num < 10)
+                {
+                    takeStone();
+                    control.takeStone();
+                }
+                else control.fullStone();
             }
         }
         if (other.tag.Equals("vaccine"))
@@ -111,7 +118,9 @@ public class Player : MonoBehaviour
                 {
                     takeVaccine();
                     Destroy(other.gameObject);
+                    control.takeVaccine();
                 }
+                else control.fullVaccine();
             }
         }
     }
@@ -121,7 +130,12 @@ public class Player : MonoBehaviour
         {
             if (Input.GetKeyDown("z"))
             {
-                takeStone();
+                if (numStone.num < 10)
+                {
+                    takeStone();
+                    control.takeStone();
+                }
+                else control.fullStone();
             }
         }
         if (other.tag.Equals("vaccine"))
@@ -132,7 +146,9 @@ public class Player : MonoBehaviour
                 {
                     takeVaccine();
                     Destroy(other.gameObject);
+                    control.takeVaccine();
                 }
+                else control.fullVaccine();
             }
         }
     }
@@ -148,6 +164,7 @@ public class Player : MonoBehaviour
                 {
                     //Isolate
                     someOne.isolate();
+                    control.isolate();
                 }
                 else
                 {
@@ -158,8 +175,10 @@ public class Player : MonoBehaviour
                         {
                             someOne.takeVaccine();
                             numVac--;
+                            control.useVaccine();
                         }
                     }
+                    else control.outOfVaccine();
                 }
             }
         }
@@ -176,6 +195,7 @@ public class Player : MonoBehaviour
                 {
                     //Isolate
                     someOne.isolate();
+                    control.isolate();
                 }
                 else
                 {
@@ -186,8 +206,10 @@ public class Player : MonoBehaviour
                         {
                             someOne.takeVaccine();
                             numVac--;
+                            control.useVaccine();
                         }
                     }
+                    else control.outOfVaccine();
                 }
             }
         }
@@ -198,6 +220,6 @@ public class Player : MonoBehaviour
     }
     void takeStone()
     {
-        numStone.num = numStone.max;
+        numStone.num += 5;
     }
 }

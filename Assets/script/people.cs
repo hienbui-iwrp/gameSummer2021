@@ -16,6 +16,7 @@ public class people : MonoBehaviour
     Transform oldPosition;
     float sickDelay = 4f;
     float now;
+    float range = 2.5f;
     int hp = 10;
     void Start()
     {
@@ -31,8 +32,14 @@ public class people : MonoBehaviour
     {
         if (beSick)
         {
-            sick();
+            foreach (people someOne in allPeople)
+            {
+                if (Vector2.Distance(transform.position, someOne.transform.position) < range)
+                    someOne.beSick = true;
+
+            }
         }
+        sick(beSick);
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -40,7 +47,6 @@ public class people : MonoBehaviour
         {
             if (!vaccine)
             {
-                virus.SetActive(true);
                 beSick = true;
             }
         }
@@ -55,6 +61,7 @@ public class people : MonoBehaviour
         {
             healing();
         }
+
     }
     public void takeVaccine()
     {
@@ -66,12 +73,20 @@ public class people : MonoBehaviour
         gameObject.transform.position = isolationArea.position;
         GetComponent<peopleMove>().enabled = false;
     }
-    void sick()
+    void sick(bool beSick)
     {
-        if (Time.time > now + sickDelay)
+        if (beSick)
         {
-            takeDmg();
-            now = Time.time;
+            virus.SetActive(true);
+            if (Time.time > now + sickDelay)
+            {
+                takeDmg();
+                now = Time.time;
+            }
+        }
+        else
+        {
+            virus.SetActive(false);
         }
     }
     void healing()

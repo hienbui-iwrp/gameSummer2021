@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 6995470658006516622}
   - component: {fileID: 4217319132950556251}
   - component: {fileID: 7551115634356246998}
+  - component: {fileID: 1649806724924913924}
   m_Layer: 0
   m_Name: people4
   m_TagString: people
@@ -240,6 +241,8 @@ MonoBehaviour:
   shield: {fileID: 5676745698948750982}
   isolationArea: {fileID: 0}
   move: {fileID: 7551115634356246998}
+  oldPosition: {x: 0, y: 0}
+  hp: 10
 --- !u!114 &7551115634356246998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,6 +253,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b4ea5f17f9d78c547a08eb00bb30057a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1649806724924913924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5085762265909321906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27c1410022daea5479fba6fd31eef76e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &5647543169311123840

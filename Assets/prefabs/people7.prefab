@@ -526,6 +526,7 @@ GameObject:
   - component: {fileID: 5012120418520962037}
   - component: {fileID: 7317199983382468097}
   - component: {fileID: 2643092280858066341}
+  - component: {fileID: 8712994489464151561}
   m_Layer: 0
   m_Name: people7
   m_TagString: people
@@ -660,6 +661,8 @@ MonoBehaviour:
   shield: {fileID: 4519233894821413922}
   isolationArea: {fileID: 0}
   move: {fileID: 7317199983382468097}
+  oldPosition: {x: 0, y: 0}
+  hp: 10
 --- !u!114 &7317199983382468097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -688,3 +691,15 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.35800785}
   serializedVersion: 2
   m_Radius: 0.42324215
+--- !u!114 &8712994489464151561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7133092875348357405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27c1410022daea5479fba6fd31eef76e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

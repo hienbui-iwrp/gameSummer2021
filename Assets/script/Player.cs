@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     public static Vector2 startPosition = new Vector2(8.5f, -3);
     public GameObject stone;
     public Note note;
+    public AudioSource TakeSound;
     public static int numVac = 0;
     public static int numMaxVac = 5;
     int direction = 0;
@@ -101,27 +102,14 @@ public class Player : MonoBehaviour
         if (other.tag.Equals("stone"))
         {
             if (Input.GetKeyDown("z"))
-            {
-                if (numStone.num < 10)
-                {
-                    takeStone();
-                    note.takeStone();
-                }
-                else note.fullStone();
-            }
+                takeStone();
+
         }
         if (other.tag.Equals("vaccine"))
         {
             if (Input.GetKeyDown("z"))
-            {
-                if (numVac < numMaxVac)
-                {
-                    takeVaccine();
-                    Destroy(other.gameObject);
-                    note.takeVaccine();
-                }
-                else note.fullVaccine();
-            }
+                takeVaccine(other);
+
         }
     }
     private void OnTriggerStay2D(Collider2D other)
@@ -129,27 +117,14 @@ public class Player : MonoBehaviour
         if (other.tag.Equals("stone"))
         {
             if (Input.GetKeyDown("z"))
-            {
-                if (numStone.num < 10)
-                {
-                    takeStone();
-                    note.takeStone();
-                }
-                else note.fullStone();
-            }
+                takeStone();
+
         }
         if (other.tag.Equals("vaccine"))
         {
             if (Input.GetKeyDown("z"))
-            {
-                if (numVac < numMaxVac)
-                {
-                    takeVaccine();
-                    Destroy(other.gameObject);
-                    note.takeVaccine();
-                }
-                else note.fullVaccine();
-            }
+                takeVaccine(other);
+
         }
     }
     private void OnCollisionEnter2D(Collision2D other)
@@ -214,12 +189,27 @@ public class Player : MonoBehaviour
             }
         }
     }
-    void takeVaccine()
+    void takeVaccine(Collider2D other)
     {
-        numVac++;
+        if (numVac < numMaxVac)
+        {
+            numVac++;
+            Destroy(other.gameObject);
+            note.takeVaccine();
+            TakeSound.Play();
+        }
+        else note.fullVaccine();
+
     }
     void takeStone()
     {
-        numStone.num += 5;
+        if (numStone.num < 10)
+        {
+            numStone.num += 5;
+            note.takeStone();
+            TakeSound.Play();
+        }
+        else note.fullStone();
+        if (numStone.num > 10) numStone.num = 10;
     }
 }

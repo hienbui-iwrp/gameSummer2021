@@ -13,33 +13,38 @@ public class people : MonoBehaviour
     public GameObject shield;
     public Transform isolationArea;
     public peopleMove move;
-    Transform oldPosition;
+    public Vector2 oldPosition;
+    public int hp = 10;
+    public bool healing = false;
     float sickDelay = 4f;
     float now;
     float range = 2.5f;
-    int hp = 10;
+
     void Start()
     {
         hpBar.setMaxHP(hp);
         now = Time.time;
+
         //list all people
         allPeople.Add(this);
         virus.SetActive(false);
         shield.SetActive(false);
-        oldPosition = gameObject.transform;
+        oldPosition = gameObject.transform.position;
+        GetComponent<Healing>().enabled = false;
     }
     private void FixedUpdate()
     {
+        hpBar.setCurHP(hp);
         if (beSick)
         {
             foreach (people someOne in allPeople)
             {
                 if (Vector2.Distance(transform.position, someOne.transform.position) < range)
                     someOne.beSick = true;
-
             }
         }
-        sick(beSick);
+        if (!healing)
+            sick(beSick);
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -59,7 +64,8 @@ public class people : MonoBehaviour
     {
         if (other.tag.Equals("hopital"))
         {
-            healing();
+            healing = true;
+            GetComponent<Healing>().enabled = true;
         }
 
     }
@@ -89,21 +95,9 @@ public class people : MonoBehaviour
             virus.SetActive(false);
         }
     }
-    void healing()
-    {
-        hp += 2;
-        hpBar.setCurHP(hp);
-        if (hp == 10)
-        {
-            beSick = false;
-            transform.position = oldPosition.position;
-            GetComponent<peopleMove>().enabled = true;
-        }
-    }
     void takeDmg()
     {
         hp--;
-        hpBar.setCurHP(hp);
         if (hp <= 0)
         {
             allPeople.Remove(this);

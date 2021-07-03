@@ -5,12 +5,33 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour
 {
-
-    public Text start;
+    public AudioSource MenuSound;
+    public GameObject firstMenu;
+    public GameObject SoundSetting;
+    // public Text startButton;
+    // public Text soundButton;
+    public Slider Sound;
+    // public Text backButton;
     // Start is called before the first frame update
     void Start()
     {
-        start.text = "Bắt đầu";
+        firstMenu.SetActive(true);
+        SoundSetting.SetActive(false);
+        Sound.value = 1;
+    }
+    private void Update()
+    {
+        MenuSound.volume = Sound.value;
+    }
+    public void goSoundSetting()
+    {
+        firstMenu.SetActive(false);
+        SoundSetting.SetActive(true);
+    }
+    public void back()
+    {
+        firstMenu.SetActive(true);
+        SoundSetting.SetActive(false);
     }
     public void goInGame()
     {

@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     public Note note;
     public AudioSource TakeSound;
     public static int numVac = 0;
-    public static int numMaxVac = 5;
+    public static int numMaxVac = 3;
     int direction = 0;
     Animator anim;
     Rigidbody2D rig;
@@ -21,8 +21,6 @@ public class Player : MonoBehaviour
         rig = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
         transform.position = startPosition;
-
-
     }
 
     // Update is called once per frame

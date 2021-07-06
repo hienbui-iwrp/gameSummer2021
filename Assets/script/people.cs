@@ -35,14 +35,8 @@ public class people : MonoBehaviour
     private void FixedUpdate()
     {
         hpBar.setCurHP(hp);
-        if (beSick)
-        {
-            foreach (people someOne in allPeople)
-            {
-                if (Vector2.Distance(transform.position, someOne.transform.position) < range)
-                    someOne.beSick = true;
-            }
-        }
+        haveVaccine();
+        contagious();
         if (!healing)
             sick(beSick);
     }
@@ -74,11 +68,35 @@ public class people : MonoBehaviour
         vaccine = true;
         shield.SetActive(true);
     }
+    //cách ly
     public void isolate()
     {
         gameObject.transform.position = isolationArea.position;
         GetComponent<peopleMove>().enabled = false;
     }
+    //vô nhiễm
+    void haveVaccine()
+    {
+        if (vaccine)
+        {
+            shield.SetActive(true);
+            beSick = false;
+        }
+        else shield.SetActive(false);
+    }
+    //lây nhiễm
+    void contagious()
+    {
+        if (beSick)
+        {
+            foreach (people someOne in allPeople)
+            {
+                if (Vector2.Distance(transform.position, someOne.transform.position) < range)
+                    someOne.beSick = true;
+            }
+        }
+    }
+    //mất sức
     void sick(bool beSick)
     {
         if (beSick)

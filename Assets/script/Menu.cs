@@ -11,17 +11,19 @@ public class Menu : MonoBehaviour
     // public Text startButton;
     // public Text soundButton;
     public Slider Sound;
+    public static float SoundVolume;
     // public Text backButton;
     // Start is called before the first frame update
     void Start()
     {
         firstMenu.SetActive(true);
         SoundSetting.SetActive(false);
-        Sound.value = 1;
+        Sound.value = 0.5f;
     }
     private void Update()
     {
         MenuSound.volume = Sound.value;
+        SoundVolume = Sound.value;
     }
     public void goSoundSetting()
     {

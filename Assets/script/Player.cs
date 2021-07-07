@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     // Start is called before the first frame update
-    public static float speed;
+    public static float speed = 5f;
     public static Vector2 startPosition = new Vector2(8.5f, -3);
     public GameObject stone;
     public Note note;
@@ -17,7 +17,6 @@ public class Player : MonoBehaviour
     Rigidbody2D rig;
     void Start()
     {
-        speed = 5f;
         rig = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
         transform.position = startPosition;
@@ -114,8 +113,9 @@ public class Player : MonoBehaviour
     {
         if (other.tag.Equals("stone"))
         {
-            if (Input.GetKeyDown("z"))
-                takeStone();
+            if (Input.anyKey)
+                if (Input.GetKeyDown("z"))
+                    takeStone();
 
         }
         if (other.tag.Equals("vaccine"))

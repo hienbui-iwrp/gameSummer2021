@@ -6,7 +6,7 @@ public class checkBat : MonoBehaviour
 {
     // Start is called before the first frame update
     public Warning warning;
-    float range = 15;
+    float range = 17;
     bool annouce = false;
     batTakeDmg batWarning = null;
     private void Update()

@@ -7,6 +7,7 @@ public class Warning : MonoBehaviour
     // Start is called before the first frame update
     public Animator warning;
     public AudioSource warningSound;
+    public Note note;
     bool play = false;
     void Start()
     {
@@ -20,11 +21,12 @@ public class Warning : MonoBehaviour
         {
             warningSound.Play();
             play = true;
+            note.turnOnWarning();
         }
     }
     public void offShow()
     {
-        warning.SetBool("show", true);
+        warning.SetBool("show", false);
         warningSound.Pause();
         play = false;
     }

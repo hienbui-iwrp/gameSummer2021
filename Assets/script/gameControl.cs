@@ -14,6 +14,7 @@ public class gameControl : MonoBehaviour
     public AudioClip winSound;
     public AudioClip loseSound;
     public AudioSource Sound;
+    public Warning warning;
     public static int pointBonus = 100;
     float now;
     bool EndGame = false;
@@ -30,6 +31,11 @@ public class gameControl : MonoBehaviour
         Sound.volume = Menu.SoundVolume;
         EndGame = true;
         win = true;
+        if (people.allPeople.Count < numPeople.max / 2)
+        {
+            win = false;
+            exit();
+        }
         foreach (people someOne in people.allPeople)
         {
             if (someOne.vaccine == false) EndGame = false;
@@ -52,7 +58,8 @@ public class gameControl : MonoBehaviour
     }
     public void exit()
     {
-
+        warning.offShow();
+        batTakeDmg.lose = false;
         inGameSound.enabled = false;
         if (win)
         {
@@ -72,6 +79,7 @@ public class gameControl : MonoBehaviour
         Time.timeScale = 0;
         people.allPeople.Clear();
         batTakeDmg.allBat.Clear();
+
     }
     void reduceBonus()
     {

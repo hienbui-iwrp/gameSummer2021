@@ -5,6 +5,7 @@ using UnityEngine;
 public class numPeople : MonoBehaviour
 {
     public static int finalPeople = 0;
+    public static int max = 0;
     public bagInfo peopleInfo;
     bool first = true;
     float wait;
@@ -16,7 +17,8 @@ public class numPeople : MonoBehaviour
     {
         if (Time.time > wait + 0.3f && first)
         {
-            peopleInfo.max = countPeople();
+            max = countPeople();
+            peopleInfo.max = max;
             first = false;
         }
         peopleInfo.setNumber(countPeople());

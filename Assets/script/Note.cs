@@ -16,7 +16,7 @@ public class Note : MonoBehaviour
     }
     private void Update()
     {
-        if (Time.time > wait + 1f)
+        if (Time.time > wait + 1.5f)
         {
             NotePanel.SetActive(false);
         }
@@ -67,6 +67,12 @@ public class Note : MonoBehaviour
     {
         NotePanel.SetActive(true);
         note.text = "Cách ly thành công";
+        wait = Time.time;
+    }
+    public void turnOnWarning()
+    {
+        NotePanel.SetActive(true);
+        note.text = "Khu cách ly gặp nguy hiểm!!!";
         wait = Time.time;
     }
 }

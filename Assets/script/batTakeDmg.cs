@@ -8,6 +8,7 @@ public class batTakeDmg : MonoBehaviour
     public static List<batTakeDmg> allBat = new List<batTakeDmg>();
     public static int batKilled = 0;
     public static bool lose = false;
+    public GameObject vaccine;
     public HPbar hpBar;
     int hp = 4;
     private void Start()
@@ -23,25 +24,32 @@ public class batTakeDmg : MonoBehaviour
             hpBar.setCurHP(hp);
             if (hp <= 0)
             {
-                allBat.Remove(this);
-                Destroy(gameObject);
+                destroyBat();
                 Destroy(other.gameObject);
                 batKilled++;
+                int createVaccine = (int)Random.Range(0, 3f);
+                if (createVaccine == 0)
+                    Instantiate<GameObject>(vaccine, transform.position, Quaternion.identity);
             }
         }
         if (other.gameObject.tag.Equals("limit") || other.gameObject.tag.Equals("people"))
         {
-            allBat.Remove(this);
-            Destroy(gameObject);
+            destroyBat();
         }
+
         if (other.gameObject.tag.Equals("hopital"))
         {
-            allBat.Remove(this);
+            destroyBat();
             lose = true;
         }
     }
     public void remove()
     {
         allBat.Remove(this);
+    }
+    void destroyBat()
+    {
+        allBat.Remove(this);
+        Destroy(gameObject);
     }
 }

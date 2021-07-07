@@ -382,6 +382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f9b9931cebe96346842e88fef4b131a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vaccine: {fileID: 4444373814255004490, guid: de3e182c38ebc054c99e206e8af014d7, type: 3}
   hpBar: {fileID: 5851207661478985496}
 --- !u!1 &5683611194622649235
 GameObject:

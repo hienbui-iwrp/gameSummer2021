@@ -83,7 +83,7 @@ public class gameControl : MonoBehaviour
     }
     void reduceBonus()
     {
-        if (Time.time > now + 3)
+        if (Time.time > now + 4.5)
         {
             pointBonus--;
             now = Time.time;

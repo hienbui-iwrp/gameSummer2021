@@ -43,10 +43,13 @@
      <Compile Include="Assets\script\Healing.cs" />
      <Compile Include="Assets\script\gameControl.cs" />
      <Compile Include="Assets\script\numStone.cs" />
+     <Compile Include="Assets\script\helpMenu.cs" />
      <Compile Include="Assets\script\Point.cs" />
      <Compile Include="Assets\script\people.cs" />
+     <Compile Include="Assets\script\checkBat.cs" />
      <Compile Include="Assets\script\Player.cs" />
      <Compile Include="Assets\script\createBat.cs" />
+     <Compile Include="Assets\script\Warning.cs" />
      <Compile Include="Assets\script\batTakeDmg.cs" />
      <Compile Include="Assets\script\numPeople.cs" />
      <Compile Include="Assets\script\numVaccine.cs" />
@@ -58,8 +61,6 @@
      <Compile Include="Assets\script\Note.cs" />
      <Compile Include="Assets\script\StoneSound.cs" />
      <Compile Include="Assets\script\Menu.cs" />
-     <Compile Include="Assets\script\Warning.cs" />
-     <Compile Include="Assets\script\checkBat.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

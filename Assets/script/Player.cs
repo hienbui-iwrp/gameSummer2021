@@ -90,7 +90,7 @@ public class Player : MonoBehaviour
                     default:
                         break;
                 }
-                Destroy(Stone, 0.8f);
+                Destroy(Stone, 1f);
             }
             else note.outOfStone();
     }
@@ -100,7 +100,6 @@ public class Player : MonoBehaviour
         {
             if (Input.GetKeyDown("z"))
                 takeStone();
-
         }
         if (other.tag.Equals("vaccine"))
         {
@@ -201,13 +200,13 @@ public class Player : MonoBehaviour
     }
     void takeStone()
     {
-        if (numStone.num < 10)
+        if (numStone.num < numStone.max)
         {
             numStone.num += 5;
             note.takeStone();
             TakeSound.Play();
         }
         else note.fullStone();
-        if (numStone.num > 10) numStone.num = 10;
+        if (numStone.num > numStone.max) numStone.num = numStone.max;
     }
 }

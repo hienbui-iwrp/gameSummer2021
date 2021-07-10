@@ -15,15 +15,18 @@ public class gameControl : MonoBehaviour
     public AudioClip loseSound;
     public AudioSource Sound;
     public Warning warning;
+    public noteEnd note;
     public static int pointBonus = 100;
     float now;
     bool EndGame = false;
     bool done = false;
     bool win = false;
+    bool loseByBat = false;
     private void Start()
     {
         Time.timeScale = 1;
         now = Time.time;
+        batTakeDmg.batKilled = 0;
     }
     private void Update()
     {
@@ -31,19 +34,21 @@ public class gameControl : MonoBehaviour
         Sound.volume = Menu.SoundVolume;
         EndGame = true;
         win = true;
-        if (people.allPeople.Count < numPeople.max / 2)
-        {
-            win = false;
-            exit();
-        }
+
         foreach (people someOne in people.allPeople)
         {
             if (someOne.vaccine == false) EndGame = false;
         }
-        if (people.allPeople.Count <= 0 || batTakeDmg.lose)
+        if (people.allPeople.Count < numPeople.max / 2)
         {
             EndGame = true;
             win = false;
+        }
+        if (batTakeDmg.lose)
+        {
+            EndGame = true;
+            win = false;
+            loseByBat = true;
         }
         if (EndGame && !done)
         {
@@ -64,9 +69,12 @@ public class gameControl : MonoBehaviour
             point.GetComponent<Point>().result.text = "Chiến thắng!!!";
             Sound.clip = winSound;
             Sound.Play();
+            note.winGame();
         }
         else
         {
+            if (loseByBat) note.loseBat();
+            else note.loseGame();
             point.GetComponent<Point>().result.text = "Thất bại";
             pointBonus = 0;
             Sound.clip = loseSound;
@@ -83,10 +91,12 @@ public class gameControl : MonoBehaviour
         createVaccine.numVaccine = 0;
         people.allPeople.Clear();
         batTakeDmg.allBat.Clear();
+        numStone.num = 0;
+        Player.numVac = 0;
     }
     void reduceBonus()
     {
-        if (Time.time > now + 4.5)
+        if (Time.time > now + 7)
         {
             pointBonus--;
             now = Time.time;

@@ -16,7 +16,7 @@ public class people : MonoBehaviour
     public Vector2 oldPosition;
     public int hp = 10;
     public bool healing = false;
-    float sickDelay = 5f;
+    float sickDelay = 6f;
     float now;
     float range = 2.5f;
 

@@ -7,6 +7,7 @@ public class Note : MonoBehaviour
 {
     public GameObject NotePanel;
     public Text note;
+    bool stop = false;
     float wait;
     private void Start()
     {
@@ -16,7 +17,7 @@ public class Note : MonoBehaviour
     }
     private void Update()
     {
-        if (Time.time > wait + 1.5f)
+        if (!stop && Time.time > wait + 1.5f)
         {
             NotePanel.SetActive(false);
         }

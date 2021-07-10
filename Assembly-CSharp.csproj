@@ -54,6 +54,7 @@
      <Compile Include="Assets\script\MenuInGame\firstMenu.cs" />
      <Compile Include="Assets\script\numPeople.cs" />
      <Compile Include="Assets\script\numVaccine.cs" />
+     <Compile Include="Assets\script\createVaccine.cs" />
      <Compile Include="Assets\script\bagInfo.cs" />
      <Compile Include="Assets\script\cameraFollow.cs" />
      <Compile Include="Assets\script\numViruss.cs" />
@@ -63,7 +64,7 @@
      <Compile Include="Assets\script\StoneSound.cs" />
      <Compile Include="Assets\script\Menu\Menu.cs" />
      <Compile Include="Assets\script\MenuInGame\help.cs" />
-     <Compile Include="Assets\script\createVaccine.cs" />
+     <Compile Include="Assets\script\noteEnd.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

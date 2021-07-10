@@ -20,7 +20,7 @@ public class BatMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time > now + 2.5)
+        if (Time.time > now + 3)
         {
             int status = (int)Random.Range(0f, 3.9f);
             if (status == 0)

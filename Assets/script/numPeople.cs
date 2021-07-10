@@ -15,7 +15,7 @@ public class numPeople : MonoBehaviour
     }
     private void Update()
     {
-        if (Time.time > wait + 0.3f && first)
+        if (Time.time > wait + 0.2f && first)
         {
             max = countPeople();
             peopleInfo.max = max;

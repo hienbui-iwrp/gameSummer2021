@@ -12,7 +12,7 @@ public class peopleMove : MonoBehaviour
     void Start()
     {
         now = Time.time;
-        timeDelay = Random.Range(2, 6);
+        timeDelay = Random.Range(2f, 6f);
         speed = 1.5f;
         rig = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
@@ -23,7 +23,7 @@ public class peopleMove : MonoBehaviour
     {
         if (Time.time > now + timeDelay)
         {
-            speed = Random.Range(3, 5);
+            speed = Random.Range(3f, 5f);
             int status = (int)Random.Range(0f, 3.9f);
             anim.enabled = true;
             if (status == 0)

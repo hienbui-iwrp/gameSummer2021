@@ -58,9 +58,7 @@ public class gameControl : MonoBehaviour
     }
     public void exit()
     {
-        warning.offShow();
-        batTakeDmg.lose = false;
-        inGameSound.enabled = false;
+        quit();
         if (win)
         {
             point.GetComponent<Point>().result.text = "Chiến thắng!!!";
@@ -76,10 +74,15 @@ public class gameControl : MonoBehaviour
         }
         point.GetComponent<Point>().enable();
         info.SetActive(false);
-        Time.timeScale = 0;
+    }
+    public void quit()
+    {
+        warning.offShow();
+        batTakeDmg.lose = false;
+        inGameSound.enabled = false;
+        createVaccine.numVaccine = 0;
         people.allPeople.Clear();
         batTakeDmg.allBat.Clear();
-
     }
     void reduceBonus()
     {

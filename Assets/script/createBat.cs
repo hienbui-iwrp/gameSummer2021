@@ -12,7 +12,7 @@ public class createBat : MonoBehaviour
     void Start()
     {
         now = Time.time;
-        delay = Random.Range(5, 15);
+        delay = Random.Range(5f, 15f);
     }
     // Update is called once per frame
     void Update()

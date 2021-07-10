@@ -6,24 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/inGame.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/camp1.unity
-    guid: 8b35f33958344c8408742680ab2360bf
-  - enabled: 1
-    path: Assets/Scenes/camp2.unity
-    guid: 01f2ddb0476bf41418b364cf2ba2c6d8
-  - enabled: 1
-    path: Assets/Scenes/camp3.unity
-    guid: 3fc43e423402ce948890173dc8b4a69f
-  - enabled: 1
-    path: Assets/Scenes/Cave.unity
-    guid: b4cfacd3f7fe66946b6aa27d4196947b
-  - enabled: 1
-    path: Assets/Scenes/Home.unity
-    guid: beb0e669c1ef72f4ab5b2109ff26f29e
-  - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: bfa705a4bcc3aff4f8cb42f9f6b38e5b
+  - enabled: 1
+    path: Assets/Scenes/inGame.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}

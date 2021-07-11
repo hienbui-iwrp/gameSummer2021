@@ -5,9 +5,9 @@ using UnityEngine;
 public class numPeople : MonoBehaviour
 {
     public static int finalPeople = 0;
-    public static int max = 0;
+    public static int max = 20;
     public bagInfo peopleInfo;
-    bool first = true;
+    // bool first = true;
     float wait;
     private void Start()
     {
@@ -15,12 +15,9 @@ public class numPeople : MonoBehaviour
     }
     private void Update()
     {
-        if (Time.time > wait + 0.2f && first)
-        {
-            max = countPeople();
-            peopleInfo.max = max;
-            first = false;
-        }
+        peopleInfo.max = max;
+
+        //set current people
         peopleInfo.setNumber(countPeople());
         finalPeople = countPeople();
     }

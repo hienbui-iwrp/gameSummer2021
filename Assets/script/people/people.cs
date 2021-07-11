@@ -11,7 +11,6 @@ public class people : MonoBehaviour
     public HPbar hpBar;
     public GameObject virus;
     public GameObject shield;
-    public Transform isolationArea;
     public peopleMove move;
     public Vector2 oldPosition;
     public int hp = 10;
@@ -24,7 +23,6 @@ public class people : MonoBehaviour
     {
         hpBar.setMaxHP(hp);
         now = Time.time;
-
         //list all people
         allPeople.Add(this);
         virus.SetActive(false);
@@ -71,7 +69,7 @@ public class people : MonoBehaviour
     //cách ly
     public void isolate()
     {
-        gameObject.transform.position = isolationArea.position;
+        gameObject.transform.position = new Vector3(11, 2, 0);
         GetComponent<peopleMove>().enabled = false;
     }
     //vô nhiễm

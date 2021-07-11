@@ -17,7 +17,7 @@ public class createVaccine : MonoBehaviour
     {
         if (Time.time > wait + 0.4f && first)
         {
-            if (Random.Range(0f, 1f) > 0.5)
+            if (Random.Range(0f, 1f) > 0.4)
             {
                 if (numVaccine <= numPeople.max)
                 {

@@ -15,12 +15,14 @@ ScriptsOnlyBuild:
     - cameraFollow
     - checkBat
     - createBat
+    - createPeople
     - createVaccine
     - findPeople
     - firstMenu
     - gameControl
     - help
     - helpMenu
+    - noteEnd
     - numPeople
     - numStone
     - numUseVaccine
@@ -103,9 +105,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2986}
     - Class: 114
-      Script: {instanceID: 3090}
+      Script: {instanceID: 3092}
     - Class: 114
-      Script: {instanceID: 5008}
+      Script: {instanceID: 5014}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -186,45 +188,49 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2986}
     - Class: 114
-      Script: {instanceID: 3018}
+      Script: {instanceID: 3014}
     - Class: 114
-      Script: {instanceID: 3090}
+      Script: {instanceID: 3020}
     - Class: 114
-      Script: {instanceID: 3100}
+      Script: {instanceID: 3092}
     - Class: 114
       Script: {instanceID: 3102}
     - Class: 114
-      Script: {instanceID: 3146}
+      Script: {instanceID: 3104}
     - Class: 114
-      Script: {instanceID: 3224}
+      Script: {instanceID: 3148}
     - Class: 114
-      Script: {instanceID: 3266}
+      Script: {instanceID: 3226}
     - Class: 114
-      Script: {instanceID: 3324}
+      Script: {instanceID: 3250}
     - Class: 114
-      Script: {instanceID: 3664}
+      Script: {instanceID: 3270}
     - Class: 114
-      Script: {instanceID: 3774}
+      Script: {instanceID: 3328}
     - Class: 114
-      Script: {instanceID: 4144}
+      Script: {instanceID: 3668}
     - Class: 114
-      Script: {instanceID: 4212}
+      Script: {instanceID: 3778}
     - Class: 114
-      Script: {instanceID: 4450}
+      Script: {instanceID: 4148}
     - Class: 114
-      Script: {instanceID: 4542}
+      Script: {instanceID: 4216}
     - Class: 114
-      Script: {instanceID: 4688}
+      Script: {instanceID: 4454}
     - Class: 114
-      Script: {instanceID: 4746}
+      Script: {instanceID: 4546}
     - Class: 114
-      Script: {instanceID: 4862}
+      Script: {instanceID: 4692}
+    - Class: 114
+      Script: {instanceID: 4750}
     - Class: 114
       Script: {instanceID: 4866}
     - Class: 114
-      Script: {instanceID: 4934}
+      Script: {instanceID: 4870}
     - Class: 114
-      Script: {instanceID: 5040}
+      Script: {instanceID: 4940}
+    - Class: 114
+      Script: {instanceID: 5046}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -462,7 +468,7 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: 526acd18231f7360c6dbecd2a63ed019
+      Hash: 292265be46491ce44f9003c12e1c7474
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: gameControl
@@ -546,6 +552,12 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
+      Hash: b79819316831f2d3213c5b88b2f20fe3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: noteEnd
+  - hash:
+      serializedVersion: 2
       Hash: 5cb506151caed4b958a7375393913d6d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -570,7 +582,7 @@ ScriptsOnlyBuild:
     className: Button
   - hash:
       serializedVersion: 2
-      Hash: 4a514e52e21c175df90cde83826b53cd
+      Hash: e885ea66950c76a8fddb44a8d31c50a2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: people
@@ -604,6 +616,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: createBat
+  - hash:
+      serializedVersion: 2
+      Hash: 6c32262ad514cf42c53ed8afb0c3eb6e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: createPeople
   - hash:
       serializedVersion: 2
       Hash: 07cdb7047781571575f8eaa093a04f69
@@ -894,6 +912,12 @@ ScriptsOnlyBuild:
     className: Note
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: delayTime
+  - hash:
+      serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -918,7 +942,7 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 9c2876d14abb1e4abf2f4539699c7a77
+      Hash: c71033dd2a5d6d94659f983cd4d658bc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Menu

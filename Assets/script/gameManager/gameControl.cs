@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 public class gameControl : MonoBehaviour
 {
     // Start is called before the first frame update
-
     public GameObject point;
     public GameObject info;
     public AudioSource inGameSound;
@@ -18,6 +17,7 @@ public class gameControl : MonoBehaviour
     public noteEnd note;
     public static int pointBonus = 100;
     float now;
+    float delayEnd;
     bool EndGame = false;
     bool done = false;
     bool win = false;
@@ -26,6 +26,7 @@ public class gameControl : MonoBehaviour
     {
         Time.timeScale = 1;
         now = Time.time;
+        delayEnd = Time.time;
         batTakeDmg.batKilled = 0;
     }
     private void Update()
@@ -51,11 +52,11 @@ public class gameControl : MonoBehaviour
             loseByBat = true;
         }
         if (EndGame && !done)
-        {
             exit();
-            done = true;
-        }
+        else
+            delayEnd = Time.time;
         reduceBonus();
+
     }
     public void goMenu()
     {
@@ -63,25 +64,29 @@ public class gameControl : MonoBehaviour
     }
     public void exit()
     {
-        quit();
-        if (win)
+        if (Time.time > delayEnd + 1)
         {
-            point.GetComponent<Point>().result.text = "Chiến thắng!!!";
-            Sound.clip = winSound;
-            Sound.Play();
-            note.winGame();
+            done = true;
+            quit();
+            if (win)
+            {
+                point.GetComponent<Point>().result.text = "Chiến thắng!!!";
+                Sound.clip = winSound;
+                Sound.Play();
+                note.winGame();
+            }
+            else
+            {
+                if (loseByBat) note.loseBat();
+                else note.loseGame();
+                point.GetComponent<Point>().result.text = "Thất bại";
+                pointBonus = 0;
+                Sound.clip = loseSound;
+                Sound.Play();
+            }
+            point.GetComponent<Point>().enable();
+            info.SetActive(false);
         }
-        else
-        {
-            if (loseByBat) note.loseBat();
-            else note.loseGame();
-            point.GetComponent<Point>().result.text = "Thất bại";
-            pointBonus = 0;
-            Sound.clip = loseSound;
-            Sound.Play();
-        }
-        point.GetComponent<Point>().enable();
-        info.SetActive(false);
     }
     public void quit()
     {
@@ -93,6 +98,7 @@ public class gameControl : MonoBehaviour
         batTakeDmg.allBat.Clear();
         numStone.num = 0;
         Player.numVac = 0;
+        createPeople.curPeople = 0;
     }
     void reduceBonus()
     {

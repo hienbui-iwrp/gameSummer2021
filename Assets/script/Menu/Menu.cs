@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour
 {
     public AudioSource MenuSound;
-    public GameObject maps;
-    public Text maps1;
-    public Text maps2;
-    public GameObject Name;
+    public GameObject level;
+    public Text level1;
+    public Text level2;
+    public Text level3;
+    public Text level4;
     public Text nameGame;
     public GameObject firstMenu;
     public GameObject SoundSetting;
@@ -23,15 +24,15 @@ public class Menu : MonoBehaviour
     // public Text soundButton;
     public Slider Sound;
     public static float SoundVolume = 0.5f;
-    // public Text backButton;
     // Start is called before the first frame update
     void Start()
     {
-        Name.SetActive(true);
         nameGame.text = "Chưa có tên";
-        maps.SetActive(false);
-        maps1.text = "Tổng quát khu vực:";
-        maps2.text = "Triển thôi!";
+        level.SetActive(false);
+        level1.text = "Dễ";
+        level2.text = "Thường";
+        level3.text = "Khó";
+        level4.text = "Trở về";
         start.text = "Bắt đầu";
         help.text = "Hướng dẫn";
         soundSet.text = "Âm thanh";
@@ -49,36 +50,57 @@ public class Menu : MonoBehaviour
     }
     public void goSoundSetting()
     {
-        maps.SetActive(false);
+        level.SetActive(false);
         firstMenu.SetActive(false);
         SoundSetting.SetActive(true);
         HelpMenu.SetActive(false);
     }
     public void backMainMenu()
     {
-        maps.SetActive(false);
+        level.SetActive(false);
         firstMenu.SetActive(true);
         SoundSetting.SetActive(false);
         HelpMenu.SetActive(false);
     }
     public void goHelpMenu()
     {
-        maps.SetActive(false);
+        level.SetActive(false);
         firstMenu.SetActive(false);
         SoundSetting.SetActive(false);
         HelpMenu.SetActive(true);
     }
-    public void goMaps()
+    public void goLevel()
     {
-        Name.SetActive(false);
-        maps.SetActive(true);
+        level.SetActive(true);
         firstMenu.SetActive(false);
         SoundSetting.SetActive(false);
         HelpMenu.SetActive(false);
     }
-    public void goInGame()
+    public void goInGame(int level)
     {
+        setLevel(level);
         SceneManager.LoadScene("inGame");
+    }
+    public void setLevel(int level)
+    {
+        if (level == 1)
+        {
+            numPeople.max = 15;
+            createBat.delayMin = 15f;
+            createBat.delayMax = 20f;
+        }
+        if (level == 2)
+        {
+            numPeople.max = 20;
+            createBat.delayMin = 15f;
+            createBat.delayMax = 20f;
+        }
+        if (level == 3)
+        {
+            numPeople.max = 25;
+            createBat.delayMin = 10f;
+            createBat.delayMax = 15f;
+        }
     }
     public void exit()
     {

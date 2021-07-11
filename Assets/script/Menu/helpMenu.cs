@@ -56,7 +56,7 @@ public class helpMenu : MonoBehaviour
         law3.text = "- Người bị nhiệm bệnh có thể lấy cho người khác nếu ở đủ gần.";
         law4.text = "- Người bệnh sẽ mất máu theo thời gian và chết khi hết máu.";
         mission0.text = "Nhiệm vụ:";
-        mission1.text = "- Tìm vaccine và tiến hành tiêm cho người dân, vaccine có thể tìm thấy từ một vài địa diểm bất kì hoặc có thể rơi ra khi giết dơi. Bạn có thể nhặt đá để giết dơi.";
+        mission1.text = "- Tìm vaccine và tiến hành tiêm cho người dân, vaccine có thể tìm thấy từ một vài địa diểm bất kì(có hào quang) hoặc có thể rơi ra khi giết dơi. Bạn có thể nhặt đá để giết dơi.";
         mission2.text = "- Vaccine chỉ có tác dụng đối với người không bị bệnh. Khi bị bệnh phải tiến hành chữa trị trước.";
         mission3.text = "Bạn sẽ thành công khi toàn dân đều có vaccine. Ngược lại, thất bại khi hơn 50% số dân bị chết hoặc dơi xâm nhập vào khu cách ly để nhiễm bệnh. Do đó phải hoàn thành càng nhanh càng tốt";
         note0.text = "Lưu ý:";

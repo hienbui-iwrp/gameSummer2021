@@ -22,7 +22,7 @@ public class Menu : MonoBehaviour
     // public Text startButton;
     // public Text soundButton;
     public Slider Sound;
-    public static float SoundVolume;
+    public static float SoundVolume = 0.5f;
     // public Text backButton;
     // Start is called before the first frame update
     void Start()
@@ -40,7 +40,7 @@ public class Menu : MonoBehaviour
         firstMenu.SetActive(true);
         SoundSetting.SetActive(false);
         HelpMenu.SetActive(false);
-        Sound.value = 0.5f;
+        Sound.value = SoundVolume;
     }
     private void Update()
     {

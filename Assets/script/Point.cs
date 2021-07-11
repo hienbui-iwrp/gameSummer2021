@@ -31,12 +31,11 @@ public class Point : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        peopleNum.text = (numPeople.finalPeople).ToString() + " x10";
-        batNum.text = (batTakeDmg.batKilled * 5).ToString() + " x5";
+        peopleNum.text = (numPeople.finalPeople).ToString() + " x2";
+        batNum.text = (batTakeDmg.batKilled).ToString();
         BonusNum.text = gameControl.pointBonus.ToString();
-        TotalNum.text = (numPeople.finalPeople * 10 + batTakeDmg.batKilled * 5 + gameControl.pointBonus).ToString();
+        TotalNum.text = (numPeople.finalPeople * 2 + batTakeDmg.batKilled + gameControl.pointBonus).ToString();
     }
-
     public void enable()
     {
         gameObject.SetActive(true);

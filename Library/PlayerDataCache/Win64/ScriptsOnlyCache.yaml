@@ -23,6 +23,7 @@ ScriptsOnlyBuild:
     - help
     - helpMenu
     - noteEnd
+    - numBat
     - numPeople
     - numStone
     - numUseVaccine
@@ -231,6 +232,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4940}
     - Class: 114
       Script: {instanceID: 5046}
+    - Class: 114
+      Script: {instanceID: 144826}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -870,7 +873,7 @@ ScriptsOnlyBuild:
     className: bagInfo
   - hash:
       serializedVersion: 2
-      Hash: 65b3a3b9a7779d539ec75a3ceddebdba
+      Hash: be579921b52153c43515b7b5d4c14f9e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: cameraFollow
@@ -894,7 +897,7 @@ ScriptsOnlyBuild:
     className: numViruss
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 4f40d6c3862f238bc5b9fb05b9f5713d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: peopleMove
@@ -942,7 +945,7 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: c71033dd2a5d6d94659f983cd4d658bc
+      Hash: 688403eb48894d74f07a4eff566e5e1e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Menu
@@ -964,6 +967,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
+  - hash:
+      serializedVersion: 2
+      Hash: 3dc0f7f44d8f5d0e64c1872d25426940
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: numBat
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity

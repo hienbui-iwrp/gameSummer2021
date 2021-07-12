@@ -17,8 +17,10 @@ public class Menu : MonoBehaviour
     public GameObject HelpMenu;
     public Text start;
     public Text help;
+    public Text help1;
     public Text soundSet;
     public Text size;
+    public Text size1;
     public Text quit;
     // public Text startButton;
     // public Text soundButton;
@@ -35,9 +37,11 @@ public class Menu : MonoBehaviour
         level4.text = "Trở về";
         start.text = "Bắt đầu";
         help.text = "Hướng dẫn";
+        help1.text = "Trở về";
         soundSet.text = "Âm thanh";
         quit.text = "Thoát";
         size.text = "Độ lớn:";
+        size1.text = "Trở về";
         firstMenu.SetActive(true);
         SoundSetting.SetActive(false);
         HelpMenu.SetActive(false);
@@ -85,21 +89,27 @@ public class Menu : MonoBehaviour
     {
         if (level == 1)
         {
-            numPeople.max = 15;
-            createBat.delayMin = 15f;
-            createBat.delayMax = 20f;
+            numPeople.max = 20;
+            batTakeDmg.maxHp = 5;
+            createBat.delayMin = 20f;
+            createBat.delayMax = 25f;
+            Player.timeDestroyBullet = 1.5f;
         }
         if (level == 2)
         {
-            numPeople.max = 20;
-            createBat.delayMin = 15f;
+            batTakeDmg.maxHp = 6;
+            numPeople.max = 25;
+            createBat.delayMin = 10f;
             createBat.delayMax = 20f;
+            Player.timeDestroyBullet = 1.3f;
         }
         if (level == 3)
         {
-            numPeople.max = 25;
-            createBat.delayMin = 10f;
-            createBat.delayMax = 15f;
+            batTakeDmg.maxHp = 7;
+            numPeople.max = 30;
+            createBat.delayMin = 5f;
+            createBat.delayMax = 10f;
+            Player.timeDestroyBullet = 1f;
         }
     }
     public void exit()

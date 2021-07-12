@@ -50,6 +50,7 @@
      <Compile Include="Assets\script\findObject\checkBat.cs" />
      <Compile Include="Assets\script\Player\Player.cs" />
      <Compile Include="Assets\script\createObject\createBat.cs" />
+     <Compile Include="Assets\script\createObject\createPeople.cs" />
      <Compile Include="Assets\script\gameManager\Warning.cs" />
      <Compile Include="Assets\script\Bat\batTakeDmg.cs" />
      <Compile Include="Assets\script\MenuInGame\firstMenu.cs" />
@@ -62,11 +63,11 @@
      <Compile Include="Assets\script\people\peopleMove.cs" />
      <Compile Include="Assets\script\gameManager\HPbar.cs" />
      <Compile Include="Assets\script\gameManager\Note.cs" />
+     <Compile Include="Assets\script\gameManager\delayTime.cs" />
      <Compile Include="Assets\script\gameManager\StoneSound.cs" />
      <Compile Include="Assets\script\Menu\Menu.cs" />
      <Compile Include="Assets\script\MenuInGame\help.cs" />
-     <Compile Include="Assets\script\createObject\createPeople.cs" />
-     <Compile Include="Assets\script\gameManager\delayTime.cs" />
+     <Compile Include="Assets\script\gameManager\numBat.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

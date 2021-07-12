@@ -5,6 +5,8 @@ using UnityEngine;
 public class peopleMove : MonoBehaviour
 {
     // Start is called before the first frame update
+    public float speedMin = 3;
+    public float speedMax = 5;
     float speed;
     Animator anim;
     Rigidbody2D rig;
@@ -23,7 +25,7 @@ public class peopleMove : MonoBehaviour
     {
         if (Time.time > now + timeDelay)
         {
-            speed = Random.Range(3f, 5f);
+            speed = Random.Range(speedMin, speedMax);
             int status = (int)Random.Range(0f, 3.9f);
             anim.enabled = true;
             if (status == 0)

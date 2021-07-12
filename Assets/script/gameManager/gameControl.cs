@@ -99,6 +99,7 @@ public class gameControl : MonoBehaviour
         numStone.num = 0;
         Player.numVac = 0;
         createPeople.curPeople = 0;
+        Time.timeScale = 0;
     }
     void reduceBonus()
     {

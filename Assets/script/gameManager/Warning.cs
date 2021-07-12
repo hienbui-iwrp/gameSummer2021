@@ -12,6 +12,7 @@ public class Warning : MonoBehaviour
     void Start()
     {
         warning.SetBool("show", false);
+        warningSound.volume = Menu.SoundVolume;
     }
 
     public void show()

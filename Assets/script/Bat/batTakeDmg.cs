@@ -8,9 +8,10 @@ public class batTakeDmg : MonoBehaviour
     public static List<batTakeDmg> allBat = new List<batTakeDmg>();
     public static int batKilled = 0;
     public static bool lose = false;
+    public static int maxHp = 5;
     public GameObject vaccine;
     public HPbar hpBar;
-    int hp = 4;
+    int hp = maxHp;
     private void Start()
     {
         allBat.Add(this);
@@ -32,10 +33,12 @@ public class batTakeDmg : MonoBehaviour
                     Instantiate<GameObject>(vaccine, transform.position, Quaternion.identity);
             }
         }
-        if (other.gameObject.tag.Equals("limit") || other.gameObject.tag.Equals("people"))
-        {
+        if (other.gameObject.tag.Equals("limit"))
             destroyBat();
-        }
+
+        if (other.gameObject.tag.Equals("people"))
+            if (!other.gameObject.GetComponent<people>().vaccine && !other.gameObject.GetComponent<people>().virus)
+                destroyBat();
 
         if (other.gameObject.tag.Equals("hopital"))
         {

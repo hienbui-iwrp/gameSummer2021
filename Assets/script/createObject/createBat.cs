@@ -21,7 +21,8 @@ public class createBat : MonoBehaviour
     {
         if (Time.time > now + delay)
         {
-            Instantiate<GameObject>(bat, door.position, Quaternion.identity);
+            GameObject newBat = Instantiate<GameObject>(bat, door.transform);
+            newBat.transform.position = new Vector3(door.position.x, door.position.y, 0);
             now = Time.time;
             delay = Random.Range(5, 15);
         }

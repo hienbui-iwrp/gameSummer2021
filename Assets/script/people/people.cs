@@ -44,7 +44,9 @@ public class people : MonoBehaviour
         {
             if (!vaccine)
             {
+                batTakeDmg.allBat.Remove(other.gameObject.GetComponent<batTakeDmg>());
                 beSick = true;
+                Destroy(other.gameObject);
             }
         }
         if (other.tag.Equals("bullet"))
@@ -70,7 +72,8 @@ public class people : MonoBehaviour
     public void isolate()
     {
         gameObject.transform.position = new Vector3(11, 2, 0);
-        GetComponent<peopleMove>().enabled = false;
+        GetComponent<peopleMove>().speedMin = 1;
+        GetComponent<peopleMove>().speedMax = 2;
     }
     //vô nhiễm
     void haveVaccine()

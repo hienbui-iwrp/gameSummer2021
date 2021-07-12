@@ -5,7 +5,7 @@ using UnityEngine;
 public class BatMove : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float speed = 4f;
+    public float speed = 3f;
     Animator anim;
     Rigidbody2D rig;
     float now;

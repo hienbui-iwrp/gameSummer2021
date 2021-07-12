@@ -5,8 +5,9 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     // Start is called before the first frame update
-    public static float speed = 5f;
-    public static Vector2 startPosition = new Vector2(8.5f, -3);
+    public static float speed = 7f;
+    public static Vector2 startPosition = new Vector2(8.5f, 0);
+    public static float timeDestroyBullet = 1f;
     public GameObject stone;
     public Note note;
     public AudioSource TakeSound;
@@ -17,6 +18,7 @@ public class Player : MonoBehaviour
     Rigidbody2D rig;
     void Start()
     {
+        TakeSound.volume = Menu.SoundVolume;
         rig = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
         transform.position = startPosition;
@@ -90,7 +92,7 @@ public class Player : MonoBehaviour
                     default:
                         break;
                 }
-                Destroy(Stone, 1f);
+                Destroy(Stone, timeDestroyBullet);
             }
             else note.outOfStone();
     }

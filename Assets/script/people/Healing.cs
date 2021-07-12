@@ -23,10 +23,10 @@ public class Healing : MonoBehaviour
         if (GetComponent<people>().hp >= 10)
         {
             GetComponent<people>().hp = 10;
-            // GetComponent<HPbar>().setCurHP(GetComponent<people>().hp);
             GetComponent<people>().beSick = false;
             GetComponent<people>().healing = false;
-            GetComponent<peopleMove>().enabled = true;
+            GetComponent<peopleMove>().speedMin = 3;
+            GetComponent<peopleMove>().speedMax = 6;
             transform.position = GetComponent<people>().oldPosition;
             GetComponent<Healing>().enabled = false;
         }

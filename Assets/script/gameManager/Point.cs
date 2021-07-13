@@ -7,10 +7,6 @@ public class Point : MonoBehaviour
 {
     // Start is called before the first frame update
     public Text result;
-    public Text peopleString;
-    public Text batString;
-    public Text BonusString;
-    public Text TotalString;
     public Text peopleNum;
     public Text batNum;
     public Text BonusNum;
@@ -20,10 +16,6 @@ public class Point : MonoBehaviour
     float now;
     void Start()
     {
-        peopleString.text = "Người dân sống sót:";
-        batString.text = "Dơi giết được:";
-        BonusString.text = "Thưởng:";
-        TotalString.text = "Tổng:";
         now = Time.time;
         gameObject.SetActive(false);
     }

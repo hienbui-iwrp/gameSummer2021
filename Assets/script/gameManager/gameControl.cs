@@ -70,7 +70,7 @@ public class gameControl : MonoBehaviour
             quit();
             if (win)
             {
-                point.GetComponent<Point>().result.text = "Chiến thắng!!!";
+                point.GetComponent<Point>().result.text = "Victory!!!";
                 Sound.clip = winSound;
                 Sound.Play();
                 note.winGame();
@@ -79,7 +79,7 @@ public class gameControl : MonoBehaviour
             {
                 if (loseByBat) note.loseBat();
                 else note.loseGame();
-                point.GetComponent<Point>().result.text = "Thất bại";
+                point.GetComponent<Point>().result.text = "Lose";
                 pointBonus = 0;
                 Sound.clip = loseSound;
                 Sound.Play();
@@ -103,7 +103,7 @@ public class gameControl : MonoBehaviour
     }
     void reduceBonus()
     {
-        if (Time.time > now + 7)
+        if (Time.time > now + 6.5)
         {
             pointBonus--;
             now = Time.time;

@@ -76,4 +76,16 @@ public class Note : MonoBehaviour
         note.text = "Khu cách ly gặp nguy hiểm!!!";
         wait = Time.time;
     }
+    public void takeShield()
+    {
+        NotePanel.SetActive(true);
+        note.text = "Khu cách ly đã được bảo vệ";
+        wait = Time.time;
+    }
+    public void noShield()
+    {
+        NotePanel.SetActive(true);
+        note.text = "Đã hết thời gian được bảo vệ";
+        wait = Time.time;
+    }
 }

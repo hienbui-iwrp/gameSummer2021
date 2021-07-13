@@ -15,13 +15,6 @@ public class Menu : MonoBehaviour
     public GameObject firstMenu;
     public GameObject SoundSetting;
     public GameObject HelpMenu;
-    public Text start;
-    public Text help;
-    public Text help1;
-    public Text soundSet;
-    public Text size;
-    public Text size1;
-    public Text quit;
     // public Text startButton;
     // public Text soundButton;
     public Slider Sound;
@@ -29,19 +22,8 @@ public class Menu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        nameGame.text = "Chưa có tên";
+        
         level.SetActive(false);
-        level1.text = "Dễ";
-        level2.text = "Thường";
-        level3.text = "Khó";
-        level4.text = "Trở về";
-        start.text = "Bắt đầu";
-        help.text = "Hướng dẫn";
-        help1.text = "Trở về";
-        soundSet.text = "Âm thanh";
-        quit.text = "Thoát";
-        size.text = "Độ lớn:";
-        size1.text = "Trở về";
         firstMenu.SetActive(true);
         SoundSetting.SetActive(false);
         HelpMenu.SetActive(false);
@@ -89,10 +71,13 @@ public class Menu : MonoBehaviour
     {
         if (level == 1)
         {
+
             numPeople.max = 20;
             batTakeDmg.maxHp = 5;
             createBat.delayMin = 20f;
             createBat.delayMax = 25f;
+            createShield.create = true;
+            createShield.delay = 10;
             Player.timeDestroyBullet = 1.5f;
         }
         if (level == 2)
@@ -101,6 +86,8 @@ public class Menu : MonoBehaviour
             numPeople.max = 25;
             createBat.delayMin = 10f;
             createBat.delayMax = 20f;
+            createShield.create = true;
+            createShield.delay = 20;
             Player.timeDestroyBullet = 1.3f;
         }
         if (level == 3)
@@ -109,6 +96,7 @@ public class Menu : MonoBehaviour
             numPeople.max = 30;
             createBat.delayMin = 5f;
             createBat.delayMax = 10f;
+            createShield.create = false;
             Player.timeDestroyBullet = 1f;
         }
     }

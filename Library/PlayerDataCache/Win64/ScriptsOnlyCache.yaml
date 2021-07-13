@@ -16,11 +16,12 @@ ScriptsOnlyBuild:
     - checkBat
     - createBat
     - createPeople
+    - createShield
     - createVaccine
     - findPeople
     - firstMenu
     - gameControl
-    - help
+    - getShield
     - helpMenu
     - noteEnd
     - numBat
@@ -54,6 +55,12 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -96,19 +103,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1662}
     - Class: 114
-      Script: {instanceID: 2084}
+      Script: {instanceID: 2086}
     - Class: 114
-      Script: {instanceID: 2456}
+      Script: {instanceID: 2458}
     - Class: 114
-      Script: {instanceID: 2602}
+      Script: {instanceID: 2604}
     - Class: 114
-      Script: {instanceID: 2880}
+      Script: {instanceID: 2882}
     - Class: 114
-      Script: {instanceID: 2986}
+      Script: {instanceID: 2988}
     - Class: 114
-      Script: {instanceID: 3092}
+      Script: {instanceID: 3096}
     - Class: 114
-      Script: {instanceID: 5014}
+      Script: {instanceID: 5020}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -175,65 +182,69 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1856}
     - Class: 114
-      Script: {instanceID: 2084}
+      Script: {instanceID: 1940}
     - Class: 114
-      Script: {instanceID: 2160}
+      Script: {instanceID: 2086}
     - Class: 114
-      Script: {instanceID: 2456}
+      Script: {instanceID: 2162}
     - Class: 114
-      Script: {instanceID: 2602}
+      Script: {instanceID: 2458}
     - Class: 114
-      Script: {instanceID: 2644}
+      Script: {instanceID: 2604}
     - Class: 114
-      Script: {instanceID: 2842}
+      Script: {instanceID: 2646}
     - Class: 114
-      Script: {instanceID: 2986}
+      Script: {instanceID: 2844}
     - Class: 114
-      Script: {instanceID: 3014}
+      Script: {instanceID: 2882}
     - Class: 114
-      Script: {instanceID: 3020}
+      Script: {instanceID: 2988}
     - Class: 114
-      Script: {instanceID: 3092}
+      Script: {instanceID: 3016}
     - Class: 114
-      Script: {instanceID: 3102}
+      Script: {instanceID: 3022}
     - Class: 114
-      Script: {instanceID: 3104}
+      Script: {instanceID: 3054}
     - Class: 114
-      Script: {instanceID: 3148}
+      Script: {instanceID: 3096}
     - Class: 114
-      Script: {instanceID: 3226}
+      Script: {instanceID: 3106}
     - Class: 114
-      Script: {instanceID: 3250}
+      Script: {instanceID: 3108}
     - Class: 114
-      Script: {instanceID: 3270}
+      Script: {instanceID: 3152}
     - Class: 114
-      Script: {instanceID: 3328}
+      Script: {instanceID: 3230}
     - Class: 114
-      Script: {instanceID: 3668}
+      Script: {instanceID: 3254}
     - Class: 114
-      Script: {instanceID: 3778}
+      Script: {instanceID: 3274}
     - Class: 114
-      Script: {instanceID: 4148}
+      Script: {instanceID: 3298}
     - Class: 114
-      Script: {instanceID: 4216}
+      Script: {instanceID: 3334}
     - Class: 114
-      Script: {instanceID: 4454}
+      Script: {instanceID: 3674}
     - Class: 114
-      Script: {instanceID: 4546}
+      Script: {instanceID: 3784}
     - Class: 114
-      Script: {instanceID: 4692}
+      Script: {instanceID: 4154}
     - Class: 114
-      Script: {instanceID: 4750}
+      Script: {instanceID: 4222}
     - Class: 114
-      Script: {instanceID: 4866}
+      Script: {instanceID: 4460}
     - Class: 114
-      Script: {instanceID: 4870}
+      Script: {instanceID: 4552}
     - Class: 114
-      Script: {instanceID: 4940}
+      Script: {instanceID: 4698}
     - Class: 114
-      Script: {instanceID: 5046}
+      Script: {instanceID: 4756}
     - Class: 114
-      Script: {instanceID: 144826}
+      Script: {instanceID: 4872}
+    - Class: 114
+      Script: {instanceID: 4876}
+    - Class: 114
+      Script: {instanceID: 4946}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -381,6 +392,12 @@ ScriptsOnlyBuild:
     className: numUseVaccine
   - hash:
       serializedVersion: 2
+      Hash: ea37daa492f489d5876950798e7f94d2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: createShield
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -525,7 +542,7 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
-      Hash: 599bd732c5e21c2522c7bdd33df602d3
+      Hash: 1c72042b25251043191028b9cec8ee16
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: helpMenu
@@ -561,7 +578,7 @@ ScriptsOnlyBuild:
     className: noteEnd
   - hash:
       serializedVersion: 2
-      Hash: 5cb506151caed4b958a7375393913d6d
+      Hash: cfbca058a0ce50ab48502a50a717694a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Point
@@ -571,6 +588,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
     className: BeforeAfterTestCommandState
+  - hash:
+      serializedVersion: 2
+      Hash: 4a21048562ba957df00177c04ebb2b03
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: getShield
   - hash:
       serializedVersion: 2
       Hash: 0fd6822f6177297bd0eb4d83cc7a9030
@@ -603,7 +626,7 @@ ScriptsOnlyBuild:
     className: SpriteShapeController
   - hash:
       serializedVersion: 2
-      Hash: 6d0f2e921138c709d677d8852d9f35cb
+      Hash: d13f01749e69dea12d4094ce1d513993
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -631,6 +654,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Warning
+  - hash:
+      serializedVersion: 2
+      Hash: 3dc0f7f44d8f5d0e64c1872d25426940
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: numBat
   - hash:
       serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
@@ -705,7 +734,7 @@ ScriptsOnlyBuild:
     className: PositionAsUV1
   - hash:
       serializedVersion: 2
-      Hash: 489857f6515e87fe98b1f8781bb2ca53
+      Hash: 959f45654083907e54a09c70fd583b95
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: firstMenu
@@ -945,7 +974,7 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 688403eb48894d74f07a4eff566e5e1e
+      Hash: 07cf961e756c42274c5e07b03eb6d1f8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Menu
@@ -957,22 +986,10 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
-      Hash: 599bd732c5e21c2522c7bdd33df602d3
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: help
-  - hash:
-      serializedVersion: 2
       Hash: 762a30c8d779b11af16ed9ce1f2d32fa
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
-  - hash:
-      serializedVersion: 2
-      Hash: 3dc0f7f44d8f5d0e64c1872d25426940
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: numBat
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity

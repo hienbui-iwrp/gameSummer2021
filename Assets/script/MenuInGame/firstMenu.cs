@@ -7,8 +7,6 @@ using UnityEngine.SceneManagement;
 
 public class firstMenu : MonoBehaviour
 {
-    public Text help;
-    public Text exit;
     public GameObject FirstMenu;
     public GameObject HelpMenu;
     bool onSetting = false;
@@ -16,8 +14,6 @@ public class firstMenu : MonoBehaviour
     void Start()
     {
         gameObject.SetActive(false);
-        help.text = "Hướng dẫn";
-        exit.text = "Thoát";
     }
     public void goHelpMenu()
     {

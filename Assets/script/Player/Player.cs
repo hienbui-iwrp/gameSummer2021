@@ -8,7 +8,9 @@ public class Player : MonoBehaviour
     public static float speed = 7f;
     public static Vector2 startPosition = new Vector2(8.5f, 0);
     public static float timeDestroyBullet = 1f;
+    public GameObject shield;
     public GameObject stone;
+    public getShield Shield;
     public Note note;
     public AudioSource TakeSound;
     public static int numVac = 0;
@@ -109,6 +111,11 @@ public class Player : MonoBehaviour
                 takeVaccine(other);
 
         }
+        if (other.tag.Equals("shield"))
+        {
+            if (Input.GetKeyDown("z"))
+                takeShield(other);
+        }
     }
     private void OnTriggerStay2D(Collider2D other)
     {
@@ -124,6 +131,11 @@ public class Player : MonoBehaviour
             if (Input.GetKeyDown("z"))
                 takeVaccine(other);
 
+        }
+        if (other.tag.Equals("shield"))
+        {
+            if (Input.GetKeyDown("z"))
+                takeShield(other);
         }
     }
     private void OnCollisionEnter2D(Collision2D other)
@@ -192,13 +204,13 @@ public class Player : MonoBehaviour
     {
         if (numVac < numMaxVac)
         {
+            createVaccine.takeVaccine();
             numVac++;
             Destroy(other.gameObject);
             note.takeVaccine();
             TakeSound.Play();
         }
         else note.fullVaccine();
-
     }
     void takeStone()
     {
@@ -210,5 +222,11 @@ public class Player : MonoBehaviour
         }
         else note.fullStone();
         if (numStone.num > numStone.max) numStone.num = numStone.max;
+    }
+    void takeShield(Collider2D other)
+    {
+        note.takeShield();
+        Shield.haveShield();
+        Destroy(other.gameObject);
     }
 }

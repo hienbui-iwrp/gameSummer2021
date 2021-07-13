@@ -5,7 +5,7 @@ using UnityEngine;
 public class BatMove : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float speed = 3f;
+    public float speed = 4f;
     Animator anim;
     Rigidbody2D rig;
     float now;
@@ -20,7 +20,7 @@ public class BatMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time > now + 3)
+        if (Time.time > now + 3.5)
         {
             int status = (int)Random.Range(0f, 3.9f);
             if (status == 0)

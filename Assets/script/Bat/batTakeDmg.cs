@@ -43,7 +43,8 @@ public class batTakeDmg : MonoBehaviour
         if (other.gameObject.tag.Equals("hopital"))
         {
             destroyBat();
-            lose = true;
+            if (!getShield.beProtected)
+                lose = true;
         }
     }
     public void remove()

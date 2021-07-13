@@ -12,6 +12,7 @@ TagManager:
   - bullet
   - vaccine
   - hopital
+  - shield
   layers:
   - Default
   - TransparentFX

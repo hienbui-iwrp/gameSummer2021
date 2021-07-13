@@ -16,19 +16,22 @@ public class checkBat : MonoBehaviour
     void check()
     {
         if (!annouce)
-            foreach (batTakeDmg bat in batTakeDmg.allBat)
-            {
-                if (Vector2.Distance(transform.position, bat.transform.position) < range)
+        {
+            if (!getShield.beProtected)
+                foreach (batTakeDmg bat in batTakeDmg.allBat)
                 {
-                    warning.show();
-                    batWarning = bat;
-                    annouce = true;
-                    break;
+                    if (Vector2.Distance(transform.position, bat.transform.position) < range)
+                    {
+                        warning.show();
+                        batWarning = bat;
+                        annouce = true;
+                        break;
+                    }
                 }
-            }
+        }
         else
         {
-            if ((batWarning == null) || (Vector2.Distance(transform.position, batWarning.transform.position) > range))
+            if (getShield.beProtected || (batWarning == null) || (Vector2.Distance(transform.position, batWarning.transform.position) > range))
             {
                 warning.offShow();
                 annouce = false;

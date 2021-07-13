@@ -40,18 +40,21 @@
      <Compile Include="Assets\script\findObject\findPeople.cs" />
      <Compile Include="Assets\script\gameManager\sceneTransition.cs" />
      <Compile Include="Assets\script\gameManager\numUseVaccine.cs" />
+     <Compile Include="Assets\script\createObject\createShield.cs" />
      <Compile Include="Assets\script\people\Healing.cs" />
      <Compile Include="Assets\script\gameManager\gameControl.cs" />
      <Compile Include="Assets\script\gameManager\numStone.cs" />
      <Compile Include="Assets\script\Menu\helpMenu.cs" />
      <Compile Include="Assets\script\gameManager\noteEnd.cs" />
      <Compile Include="Assets\script\gameManager\Point.cs" />
+     <Compile Include="Assets\script\Player\getShield.cs" />
      <Compile Include="Assets\script\people\people.cs" />
      <Compile Include="Assets\script\findObject\checkBat.cs" />
      <Compile Include="Assets\script\Player\Player.cs" />
      <Compile Include="Assets\script\createObject\createBat.cs" />
      <Compile Include="Assets\script\createObject\createPeople.cs" />
      <Compile Include="Assets\script\gameManager\Warning.cs" />
+     <Compile Include="Assets\script\gameManager\numBat.cs" />
      <Compile Include="Assets\script\Bat\batTakeDmg.cs" />
      <Compile Include="Assets\script\MenuInGame\firstMenu.cs" />
      <Compile Include="Assets\script\gameManager\numPeople.cs" />
@@ -66,8 +69,6 @@
      <Compile Include="Assets\script\gameManager\delayTime.cs" />
      <Compile Include="Assets\script\gameManager\StoneSound.cs" />
      <Compile Include="Assets\script\Menu\Menu.cs" />
-     <Compile Include="Assets\script\MenuInGame\help.cs" />
-     <Compile Include="Assets\script\gameManager\numBat.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

@@ -1,4 +1,1 @@
-public class story : helpMenu
-{
-    
-}
+

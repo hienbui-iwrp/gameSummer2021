@@ -204,7 +204,7 @@ public class Player : MonoBehaviour
     {
         if (numVac < numMaxVac)
         {
-            createVaccine.numVaccine--;
+            createVaccine.takeVaccine();
             numVac++;
             Destroy(other.gameObject);
             note.takeVaccine();

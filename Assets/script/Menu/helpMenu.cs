@@ -41,8 +41,8 @@ public class helpMenu : MonoBehaviour
         cur++;
         if (cur == helpList.Length)
         {
-            cur = 0;
             menu.goInGame();
+            cur = 0;
         }
     }
     public void goBack()

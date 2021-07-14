@@ -7,9 +7,9 @@ public class createVaccine : MonoBehaviour
     // Start is called before the first frame update
     public GameObject vaccine;
     public static int numVaccine = 0;
-    public static int maxVaccine = 8;
-    float delay = 15;
-    float now = -10;
+    public static int maxVaccine = 10;
+    float delay = 10;
+    public static float now = -10;
     private void Start()
     {
         now = -10;
@@ -17,17 +17,22 @@ public class createVaccine : MonoBehaviour
     }
     private void Update()
     {
-        // Debug.Log(numVaccine);
+        Debug.Log(numVaccine);
         if (Time.time > now + delay)
             if (numVaccine < maxVaccine)
             {
-                if (Random.Range(0f, 1f) > 0.5)
+                if (Random.Range(0f, 1f) > 0.7)
                 {
                     GameObject newVaccine = Instantiate<GameObject>(vaccine, transform);
                     numVaccine++;
                     newVaccine.transform.position = transform.position;
                 }
-                now = Time.time;
+                // now = Time.time;
             }
+    }
+    public static void takeVaccine()
+    {
+        now = Time.time;
+        numVaccine--;
     }
 }

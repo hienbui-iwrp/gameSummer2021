@@ -9,7 +9,7 @@ public class createStone : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (Random.Range(0f, 1f) > 0.5)
+        if (Random.Range(0f, 1f) > 0.3)
             if (curStone < 40)
             {
                 int stoneType = Random.Range(0, stoneList.Length);

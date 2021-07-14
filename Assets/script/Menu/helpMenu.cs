@@ -7,16 +7,17 @@ using UnityEngine.UI;
 public class helpMenu : MonoBehaviour
 {
     public GameObject[] helpList;
+    public Menu menu;
     public GameObject mainMenu;
     public Text next;
     public int cur = 0;
     void Start()
     {
         gameObject.SetActive(false);
-        // for (int i = 0; i < helpList.Length; i++)
-        //     helpList[i].SetActive(false);
+        for (int i = 0; i < helpList.Length; i++)
+            helpList[i].SetActive(false);
     }
-    private void FixedUpdate()
+    private void Update()
     {
         for (int i = 0; i < helpList.Length; i++)
         {
@@ -26,10 +27,6 @@ public class helpMenu : MonoBehaviour
         if (cur == helpList.Length - 1) next.text = "Ok";
         else next.text = "Next";
     }
-    // private void Update()
-    // {
-
-    // }
     public void goNext()
     {
         cur++;
@@ -37,6 +34,15 @@ public class helpMenu : MonoBehaviour
         {
             goMainMenu();
             cur = 0;
+        }
+    }
+    public void goNextStory()
+    {
+        cur++;
+        if (cur == helpList.Length)
+        {
+            cur = 0;
+            menu.goInGame();
         }
     }
     public void goBack()

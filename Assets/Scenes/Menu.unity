@@ -1185,8 +1185,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1571710804}
-        m_TargetAssemblyTypeName: story, Assembly-CSharp
-        m_MethodName: goNext
+        m_TargetAssemblyTypeName: helpMenu, Assembly-CSharp
+        m_MethodName: goNextStory
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1820,6 +1820,7 @@ MonoBehaviour:
   - {fileID: 186005248}
   - {fileID: 1166778248}
   - {fileID: 234708348}
+  menu: {fileID: 1934269383}
   mainMenu: {fileID: 1826296289}
   next: {fileID: 2035213674}
   cur: 0
@@ -5128,7 +5129,7 @@ RectTransform:
   - {fileID: 1754093579}
   - {fileID: 635007022}
   m_Father: {fileID: 1571710803}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5434,7 +5435,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1571710803
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5446,8 +5447,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2145977915}
   - {fileID: 1475404165}
+  - {fileID: 2145977915}
   - {fileID: 355014428}
   m_Father: {fileID: 1934269387}
   m_RootOrder: 5
@@ -5466,16 +5467,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1571710802}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c1e249b9794cc44ab533ed4e9676382, type: 3}
+  m_Script: {fileID: 11500000, guid: 10e39a6cbe1b9024d8cab6a2ee5cb97a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   helpList:
   - {fileID: 2145977914}
   - {fileID: 1475404164}
+  menu: {fileID: 1934269383}
   mainMenu: {fileID: 1826296289}
   next: {fileID: 1735098172}
   cur: 0
-  menu: {fileID: 1934269383}
 --- !u!1 &1575960608
 GameObject:
   m_ObjectHideFlags: 0
@@ -8385,7 +8386,7 @@ RectTransform:
   - {fileID: 1535793360}
   - {fileID: 2069685977}
   m_Father: {fileID: 1571710803}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}

@@ -10,13 +10,18 @@ public class createVaccine : MonoBehaviour
     public static int maxVaccine = 10;
     float delay = 10;
     float now = 0;
-
+    private void Start()
+    {
+        now = 0;
+        numVaccine = 0;
+    }
     private void Update()
     {
+        // Debug.Log(numVaccine);
         if (Time.time > now + delay)
             if (numVaccine < maxVaccine)
             {
-                if (Random.Range(0f, 1f) > 0.4)
+                if (Random.Range(0f, 1f) > 0.1)
                 {
                     GameObject newVaccine = Instantiate<GameObject>(vaccine, transform);
                     numVaccine++;
@@ -24,9 +29,5 @@ public class createVaccine : MonoBehaviour
                 }
                 now = Time.time;
             }
-    }
-    public static void takeVaccine()
-    {
-        numVaccine--;
     }
 }

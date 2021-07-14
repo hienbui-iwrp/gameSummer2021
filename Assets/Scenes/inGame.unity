@@ -14145,7 +14145,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &251282423
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14186,7 +14186,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &257763290
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20691,7 +20691,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &456798140
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25681,7 +25681,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &645174679
 RectTransform:
   m_ObjectHideFlags: 0
@@ -38016,7 +38016,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &987331241
 RectTransform:
   m_ObjectHideFlags: 0
@@ -89960,8 +89960,10 @@ MonoBehaviour:
   - {fileID: 645174678}
   - {fileID: 987331240}
   - {fileID: 251282422}
+  menu: {fileID: 0}
   mainMenu: {fileID: 1078710}
   next: {fileID: 1588482191}
+  cur: 0
 --- !u!114 &1274574663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92255,9 +92257,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1078714}
-        m_TargetAssemblyTypeName: firstMenu, Assembly-CSharp
-        m_MethodName: exitGame
+      - m_Target: {fileID: 2083033948}
+        m_TargetAssemblyTypeName: gameControl, Assembly-CSharp
+        m_MethodName: quit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -92267,9 +92269,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2083033948}
-        m_TargetAssemblyTypeName: gameControl, Assembly-CSharp
-        m_MethodName: quit
+      - m_Target: {fileID: 1078714}
+        m_TargetAssemblyTypeName: firstMenu, Assembly-CSharp
+        m_MethodName: exitGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

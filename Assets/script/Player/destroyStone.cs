@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class destroyStone : MonoBehaviour
 {
-    int curStone = 15;
+    int curStone = 10;
     public void takeStone()
     {
         curStone -= 5;

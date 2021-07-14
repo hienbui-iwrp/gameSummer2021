@@ -43,6 +43,7 @@
      <Compile Include="Assets\script\createObject\createShield.cs" />
      <Compile Include="Assets\script\people\Healing.cs" />
      <Compile Include="Assets\script\gameManager\gameControl.cs" />
+     <Compile Include="Assets\script\Menu\story.cs" />
      <Compile Include="Assets\script\gameManager\numStone.cs" />
      <Compile Include="Assets\script\Menu\helpMenu.cs" />
      <Compile Include="Assets\script\gameManager\noteEnd.cs" />
@@ -71,7 +72,7 @@
      <Compile Include="Assets\script\gameManager\delayTime.cs" />
      <Compile Include="Assets\script\gameManager\StoneSound.cs" />
      <Compile Include="Assets\script\Menu\Menu.cs" />
-     <Compile Include="Assets\script\Menu\story.cs" />
+     <Compile Include="Assets\script\Player\destroyVaccine.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

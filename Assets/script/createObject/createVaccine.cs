@@ -8,11 +8,11 @@ public class createVaccine : MonoBehaviour
     public GameObject vaccine;
     public static int numVaccine = 0;
     public static int maxVaccine = 10;
-    float delay = 10;
+    float delay = 20;
     public static float now = -10;
     private void Start()
     {
-        now = -10;
+        now = -15;
         numVaccine = 0;
     }
     private void Update()

@@ -91,9 +91,11 @@ public class Menu : MonoBehaviour
             createBat.delayMin = 20f;
             createBat.delayMax = 25f;
             createShield.create = true;
+            createVaccine.maxVaccine = 10;
             createShield.delay = 0;
             Player.timeDestroyBullet = 1.5f;
             gameControl.delayBonus = 6;
+
         }
         if (level == 2)
         {
@@ -102,6 +104,7 @@ public class Menu : MonoBehaviour
             createBat.delayMin = 10f;
             createBat.delayMax = 20f;
             createShield.create = true;
+            createVaccine.maxVaccine = 8;
             createShield.delay = 10;
             Player.timeDestroyBullet = 1.3f;
             gameControl.delayBonus = 7;
@@ -112,6 +115,7 @@ public class Menu : MonoBehaviour
             numPeople.max = 30;
             createBat.delayMin = 5f;
             createBat.delayMax = 10f;
+            createVaccine.maxVaccine = 6;
             createShield.create = false;
             Player.timeDestroyBullet = 1f;
             gameControl.delayBonus = 8;

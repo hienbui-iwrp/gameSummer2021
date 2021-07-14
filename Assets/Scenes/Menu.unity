@@ -856,7 +856,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CHAO OF BATS
+  m_Text: CHAOS OF BATS
 --- !u!222 &306621870
 CanvasRenderer:
   m_ObjectHideFlags: 0

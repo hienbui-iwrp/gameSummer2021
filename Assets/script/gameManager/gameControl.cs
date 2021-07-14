@@ -96,6 +96,7 @@ public class gameControl : MonoBehaviour
         inGameSound.enabled = false;
         createVaccine.numVaccine = 0;
         createStone.curStone = 0;
+        createShield.curShield = 0;
         people.allPeople.Clear();
         batTakeDmg.allBat.Clear();
         numStone.num = 0;

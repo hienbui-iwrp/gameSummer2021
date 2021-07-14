@@ -14,7 +14,7 @@ public class createShield : MonoBehaviour
 
     private void Start()
     {
-        now = Time.time;
+        now = -10;
     }
     // Update is called once per frame
     void Update()

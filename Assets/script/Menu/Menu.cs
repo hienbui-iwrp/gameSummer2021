@@ -13,6 +13,7 @@ public class Menu : MonoBehaviour
     public Text level4;
     public Text nameGame;
     public GameObject firstMenu;
+    public GameObject story;
     public GameObject SoundSetting;
     public GameObject HelpMenu;
     // public Text startButton;
@@ -22,8 +23,9 @@ public class Menu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
         level.SetActive(false);
+        story.SetActive(false);
         firstMenu.SetActive(true);
         SoundSetting.SetActive(false);
         HelpMenu.SetActive(false);
@@ -37,6 +39,7 @@ public class Menu : MonoBehaviour
     public void goSoundSetting()
     {
         level.SetActive(false);
+        story.SetActive(false);
         firstMenu.SetActive(false);
         SoundSetting.SetActive(true);
         HelpMenu.SetActive(false);
@@ -44,6 +47,7 @@ public class Menu : MonoBehaviour
     public void backMainMenu()
     {
         level.SetActive(false);
+        story.SetActive(false);
         firstMenu.SetActive(true);
         SoundSetting.SetActive(false);
         HelpMenu.SetActive(false);
@@ -51,6 +55,7 @@ public class Menu : MonoBehaviour
     public void goHelpMenu()
     {
         level.SetActive(false);
+        story.SetActive(false);
         firstMenu.SetActive(false);
         SoundSetting.SetActive(false);
         HelpMenu.SetActive(true);
@@ -58,27 +63,37 @@ public class Menu : MonoBehaviour
     public void goLevel()
     {
         level.SetActive(true);
+        story.SetActive(false);
         firstMenu.SetActive(false);
         SoundSetting.SetActive(false);
         HelpMenu.SetActive(false);
     }
-    public void goInGame(int level)
+    public void goStory(int lv)
     {
-        setLevel(level);
+        level.SetActive(false);
+        story.SetActive(true);
+        firstMenu.SetActive(false);
+        SoundSetting.SetActive(false);
+        HelpMenu.SetActive(false);
+        setLevel(lv);
+        // goInGame();
+    }
+    public void goInGame()
+    {
         SceneManager.LoadScene("inGame");
     }
     public void setLevel(int level)
     {
         if (level == 1)
         {
-
             numPeople.max = 20;
             batTakeDmg.maxHp = 5;
             createBat.delayMin = 20f;
             createBat.delayMax = 25f;
             createShield.create = true;
-            createShield.delay = 10;
+            createShield.delay = 0;
             Player.timeDestroyBullet = 1.5f;
+            gameControl.delayBonus = 6;
         }
         if (level == 2)
         {
@@ -87,8 +102,9 @@ public class Menu : MonoBehaviour
             createBat.delayMin = 10f;
             createBat.delayMax = 20f;
             createShield.create = true;
-            createShield.delay = 20;
+            createShield.delay = 10;
             Player.timeDestroyBullet = 1.3f;
+            gameControl.delayBonus = 7;
         }
         if (level == 3)
         {
@@ -98,6 +114,7 @@ public class Menu : MonoBehaviour
             createBat.delayMax = 10f;
             createShield.create = false;
             Player.timeDestroyBullet = 1f;
+            gameControl.delayBonus = 8;
         }
     }
     public void exit()

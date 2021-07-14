@@ -103,7 +103,7 @@ public class Player : MonoBehaviour
         if (other.tag.Equals("stone"))
         {
             if (Input.GetKeyDown("z"))
-                takeStone();
+                takeStone(other);
         }
         if (other.tag.Equals("vaccine"))
         {
@@ -123,7 +123,7 @@ public class Player : MonoBehaviour
         {
             if (Input.anyKey)
                 if (Input.GetKeyDown("z"))
-                    takeStone();
+                    takeStone(other);
 
         }
         if (other.tag.Equals("vaccine"))
@@ -212,11 +212,12 @@ public class Player : MonoBehaviour
         }
         else note.fullVaccine();
     }
-    void takeStone()
+    void takeStone(Collider2D other)
     {
         if (numStone.num < numStone.max)
         {
             numStone.num += 5;
+            other.gameObject.GetComponent<destroyStone>().takeStone();
             note.takeStone();
             TakeSound.Play();
         }

@@ -16,6 +16,7 @@ public class gameControl : MonoBehaviour
     public Warning warning;
     public noteEnd note;
     public static int pointBonus = 100;
+    public static float delayBonus = 7;
     float now;
     float delayEnd;
     bool EndGame = false;
@@ -103,7 +104,7 @@ public class gameControl : MonoBehaviour
     }
     void reduceBonus()
     {
-        if (Time.time > now + 6.5)
+        if (Time.time > now + delayBonus)
         {
             pointBonus--;
             now = Time.time;

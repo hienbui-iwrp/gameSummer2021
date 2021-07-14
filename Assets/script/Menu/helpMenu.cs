@@ -9,14 +9,14 @@ public class helpMenu : MonoBehaviour
     public GameObject[] helpList;
     public GameObject mainMenu;
     public Text next;
-    int cur = 0;
+    public int cur = 0;
     void Start()
     {
         gameObject.SetActive(false);
         // for (int i = 0; i < helpList.Length; i++)
         //     helpList[i].SetActive(false);
     }
-    private void Update()
+    private void FixedUpdate()
     {
         for (int i = 0; i < helpList.Length; i++)
         {
@@ -26,6 +26,10 @@ public class helpMenu : MonoBehaviour
         if (cur == helpList.Length - 1) next.text = "Ok";
         else next.text = "Next";
     }
+    // private void Update()
+    // {
+
+    // }
     public void goNext()
     {
         cur++;

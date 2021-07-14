@@ -6,7 +6,7 @@ public class createShield : MonoBehaviour
 {
     public GameObject shield;
     public static int curShield = 0;
-    public static float delay = 10;
+    public static float delay = 5;
     public static bool create = true;
 
     int max = 1;

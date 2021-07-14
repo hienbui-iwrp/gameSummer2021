@@ -6,7 +6,7 @@ public class numStone : MonoBehaviour
 {
     public bagInfo stoneInfo;
     public static int num = 0;
-    public static int max = 30;
+    public static int max = 25;
     private void Start()
     {
         stoneInfo.max = max;

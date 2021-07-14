@@ -7,7 +7,7 @@ public class createVaccine : MonoBehaviour
     // Start is called before the first frame update
     public GameObject vaccine;
     public static int numVaccine = 0;
-    public static int maxVaccine = 15;
+    public static int maxVaccine = 10;
     float delay = 10;
     float now = 0;
 

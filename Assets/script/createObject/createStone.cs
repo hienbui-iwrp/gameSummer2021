@@ -5,7 +5,7 @@ using UnityEngine;
 public class createStone : MonoBehaviour
 {
     public GameObject[] stoneList;
-    static int curStone = 0;
+    public static int curStone = 0;
     // Start is called before the first frame update
     void Start()
     {

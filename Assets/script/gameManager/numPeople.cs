@@ -5,7 +5,7 @@ using UnityEngine;
 public class numPeople : MonoBehaviour
 {
     public static int finalPeople = 0;
-    public static int max = 20;
+    public static int max = 7;
     public bagInfo peopleInfo;
     // bool first = true;
     float wait;

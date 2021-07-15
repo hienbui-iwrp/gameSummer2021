@@ -86,6 +86,7 @@ public class gameControl : MonoBehaviour
                 Sound.Play();
             }
             point.GetComponent<Point>().enable();
+            point.GetComponent<Point>().setScore();
             info.SetActive(false);
         }
     }

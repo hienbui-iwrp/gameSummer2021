@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{bdbe8b10-6292-5f09-1fe1-2542f82f58c8}</ProjectGuid>
+    <ProjectGuid>{8e54243c-88ad-1987-f859-48f4ef010e0f}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -640,91 +640,91 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Editor">
-        <HintPath>G:/GameDevProject/ChaoOfBats/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+        <HintPath>G:/GameDevProject/ChaosOfBats/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
-        <HintPath>G:/GameDevProject/ChaoOfBats/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+        <HintPath>G:/GameDevProject/ChaosOfBats/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>G:/GameDevProject/ChaoOfBats/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>G:/GameDevProject/ChaosOfBats/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect">
-        <HintPath>G:/GameDevProject/ChaoOfBats/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
+        <HintPath>G:/GameDevProject/ChaosOfBats/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-        <HintPath>G:/GameDevProject/ChaoOfBats/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+        <HintPath>G:/GameDevProject/ChaosOfBats/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="PsdPlugin">
-        <HintPath>G:/GameDevProject/ChaoOfBats/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
+        <HintPath>G:/GameDevProject/ChaosOfBats/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>G:/GameDevProject/ChaoOfBats/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>G:/GameDevProject/ChaosOfBats/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>G:/GameDevProject/ChaoOfBats/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+        <HintPath>G:/GameDevProject/ChaosOfBats/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>G:/GameDevProject/ChaoOfBats/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+        <HintPath>G:/GameDevProject/ChaosOfBats/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>G:/GameDevProject/ChaoOfBats/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+        <HintPath>G:/GameDevProject/ChaosOfBats/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.IK.Editor">
-        <HintPath>G:/GameDevProject/ChaoOfBats/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
+        <HintPath>G:/GameDevProject/ChaosOfBats/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-        <HintPath>G:/GameDevProject/ChaoOfBats/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+        <HintPath>G:/GameDevProject/ChaosOfBats/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Psdimporter.Editor">
-        <HintPath>G:/GameDevProject/ChaoOfBats/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
+        <HintPath>G:/GameDevProject/ChaosOfBats/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Path.Editor">
-        <HintPath>G:/GameDevProject/ChaoOfBats/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
+        <HintPath>G:/GameDevProject/ChaosOfBats/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">
-        <HintPath>G:/GameDevProject/ChaoOfBats/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+        <HintPath>G:/GameDevProject/ChaosOfBats/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>G:/GameDevProject/ChaoOfBats/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>G:/GameDevProject/ChaosOfBats/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>G:/GameDevProject/ChaoOfBats/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+        <HintPath>G:/GameDevProject/ChaosOfBats/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>G:/GameDevProject/ChaoOfBats/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>G:/GameDevProject/ChaosOfBats/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-        <HintPath>G:/GameDevProject/ChaoOfBats/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+        <HintPath>G:/GameDevProject/ChaosOfBats/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.IK.Runtime">
-        <HintPath>G:/GameDevProject/ChaoOfBats/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
+        <HintPath>G:/GameDevProject/ChaosOfBats/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
-        <HintPath>G:/GameDevProject/ChaoOfBats/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+        <HintPath>G:/GameDevProject/ChaosOfBats/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Runtime">
-        <HintPath>G:/GameDevProject/ChaoOfBats/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+        <HintPath>G:/GameDevProject/ChaosOfBats/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect.Editor">
-        <HintPath>G:/GameDevProject/ChaoOfBats/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
+        <HintPath>G:/GameDevProject/ChaosOfBats/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>G:/GameDevProject/ChaoOfBats/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>G:/GameDevProject/ChaosOfBats/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
-        <HintPath>G:/GameDevProject/ChaoOfBats/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+        <HintPath>G:/GameDevProject/ChaosOfBats/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
-        <HintPath>G:/GameDevProject/ChaoOfBats/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+        <HintPath>G:/GameDevProject/ChaosOfBats/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
-        <HintPath>G:/GameDevProject/ChaoOfBats/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+        <HintPath>G:/GameDevProject/ChaosOfBats/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
-        <HintPath>G:/GameDevProject/ChaoOfBats/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+        <HintPath>G:/GameDevProject/ChaosOfBats/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
-        <HintPath>G:/GameDevProject/ChaoOfBats/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+        <HintPath>G:/GameDevProject/ChaosOfBats/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

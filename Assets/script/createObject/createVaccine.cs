@@ -17,7 +17,6 @@ public class createVaccine : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log(numVaccine);
         if (Time.time > now + delay)
             if (numVaccine < maxVaccine)
             {

@@ -91,8 +91,8 @@ public class Menu : MonoBehaviour
             createBat.delayMin = 20f;
             createBat.delayMax = 25f;
             createShield.create = true;
-            createVaccine.maxVaccine = 10;
-            createShield.delay = 0;
+            createVaccine.maxVaccine = 12;
+            // createShield.delay = 0;
             Player.timeDestroyBullet = 1.5f;
             gameControl.delayBonus = 6;
             createStone.maxStone = 40;
@@ -101,11 +101,11 @@ public class Menu : MonoBehaviour
         {
             batTakeDmg.maxHp = 6;
             numPeople.max = 25;
-            createBat.delayMin = 10f;
+            createBat.delayMin = 15f;
             createBat.delayMax = 20f;
             createShield.create = true;
-            createVaccine.maxVaccine = 8;
-            createShield.delay = 0;
+            createVaccine.maxVaccine = 10;
+            // createShield.delay = 0;
             Player.timeDestroyBullet = 1.3f;
             gameControl.delayBonus = 7;
             createStone.maxStone = 50;
@@ -114,11 +114,11 @@ public class Menu : MonoBehaviour
         {
             batTakeDmg.maxHp = 7;
             numPeople.max = 30;
-            createBat.delayMin = 5f;
-            createBat.delayMax = 10f;
-            createVaccine.maxVaccine = 6;
+            createBat.delayMin = 10f;
+            createBat.delayMax = 15f;
+            createVaccine.maxVaccine = 8;
             createShield.create = true;
-            createShield.delay = 0;
+            // createShield.delay = 0;
             Player.timeDestroyBullet = 1f;
             gameControl.delayBonus = 8;
             createStone.maxStone = 60;

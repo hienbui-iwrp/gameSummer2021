@@ -820,8 +820,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0009994507, y: 207.95084}
-  m_SizeDelta: {x: 947, y: 212.6145}
+  m_AnchoredPosition: {x: -2, y: 239}
+  m_SizeDelta: {x: 1407.4358, y: 396.206}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &306621869
 MonoBehaviour:
@@ -836,7 +836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5647059, g: 0, b: 0.3788043, a: 1}
+  m_Color: {r: 0.6792453, g: 0.015379119, b: 0.4385943, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -845,18 +845,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: ee7ec563db7cce7429e6dd7da58c5f86, type: 3}
-    m_FontSize: 100
+    m_FontSize: 130
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 103
+    m_MinSize: 0
+    m_MaxSize: 157
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CHAOS OF BATS
+  m_Text: CHAOS  OF  BATS
 --- !u!222 &306621870
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2779,7 +2779,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -153.55, y: 37}
+  m_AnchoredPosition: {x: -153.55, y: 28.455994}
   m_SizeDelta: {x: 492.91, y: 56.912}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &837427973
@@ -3599,8 +3599,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 355.31125, y: 0}
-  m_SizeDelta: {x: 144.2943, y: 47.9968}
+  m_AnchoredPosition: {x: 366.5045, y: 0}
+  m_SizeDelta: {x: 49.3356, y: 47.9968}
   m_Pivot: {x: 0.36264417, y: 0.5}
 --- !u!114 &977988996
 MonoBehaviour:
@@ -4327,7 +4327,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -153.55, y: -49.947372}
+  m_AnchoredPosition: {x: -153.55, y: -57}
   m_SizeDelta: {x: 492.91, y: 72.8067}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1206096413
@@ -4896,7 +4896,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Space
+  m_Text: C
 --- !u!222 &1343495265
 CanvasRenderer:
   m_ObjectHideFlags: 0

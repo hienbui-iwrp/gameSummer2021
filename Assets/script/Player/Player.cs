@@ -71,7 +71,7 @@ public class Player : MonoBehaviour
     }
     void throwStone()
     {
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("c"))
             if (numStone.num > 0)
             {
                 numStone.num--;
@@ -101,42 +101,24 @@ public class Player : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag.Equals("stone"))
-        {
-            if (Input.GetKeyDown("z"))
-                takeStone(other);
-        }
-        if (other.tag.Equals("vaccine"))
-        {
-            if (Input.GetKeyDown("z"))
-                takeVaccine(other);
+            takeStone(other);
 
-        }
+        if (other.tag.Equals("vaccine"))
+            takeVaccine(other);
+
         if (other.tag.Equals("shield"))
-        {
-            if (Input.GetKeyDown("z"))
-                takeShield(other);
-        }
+            takeShield(other);
     }
     private void OnTriggerStay2D(Collider2D other)
     {
         if (other.tag.Equals("stone"))
-        {
-            if (Input.anyKey)
-                if (Input.GetKeyDown("z"))
-                    takeStone(other);
+            takeStone(other);
 
-        }
         if (other.tag.Equals("vaccine"))
-        {
-            if (Input.GetKeyDown("z"))
-                takeVaccine(other);
+            takeVaccine(other);
 
-        }
         if (other.tag.Equals("shield"))
-        {
-            if (Input.GetKeyDown("z"))
-                takeShield(other);
-        }
+            takeShield(other);
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -202,32 +184,37 @@ public class Player : MonoBehaviour
     }
     void takeVaccine(Collider2D other)
     {
-        if (numVac < numMaxVac)
-        {
-            createVaccine.takeVaccine();
-            numVac++;
-            Destroy(other.gameObject);
-            note.takeVaccine();
-            TakeSound.Play();
-        }
-        else note.fullVaccine();
+        if (Input.GetKeyDown("z"))
+            if (numVac < numMaxVac)
+            {
+                createVaccine.takeVaccine();
+                numVac++;
+                Destroy(other.gameObject);
+                note.takeVaccine();
+                TakeSound.Play();
+            }
+            else note.fullVaccine();
     }
     void takeStone(Collider2D other)
     {
-        if (numStone.num < numStone.max)
-        {
-            numStone.num += 5;
-            other.gameObject.GetComponent<destroyStone>().takeStone();
-            note.takeStone();
-            TakeSound.Play();
-        }
-        else note.fullStone();
+        if (Input.GetKeyDown("z"))
+            if (numStone.num < numStone.max)
+            {
+                numStone.num += 5;
+                other.gameObject.GetComponent<destroyStone>().takeStone();
+                note.takeStone();
+                TakeSound.Play();
+            }
+            else note.fullStone();
         if (numStone.num > numStone.max) numStone.num = numStone.max;
     }
     void takeShield(Collider2D other)
     {
-        note.takeShield();
-        Shield.haveShield();
-        Destroy(other.gameObject);
+        if (Input.GetKeyDown("z"))
+        {
+            note.takeShield();
+            Shield.haveShield();
+            Destroy(other.gameObject);
+        }
     }
 }
